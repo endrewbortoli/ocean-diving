@@ -4,6 +4,13 @@
   "homepage": "https://endrewbortoli.github.io/ocean-diving",
   "private": true,
   "dependencies": {
+    "@deck.gl/aggregation-layers": "^9.0.35",
+    "@deck.gl/core": "^9.0.35",
+    "@deck.gl/geo-layers": "^9.0.35",
+    "@deck.gl/layers": "^9.0.35",
+    "@deck.gl/react": "^9.0.35",
+    "@react-three/drei": "^9.115.0",
+    "@react-three/fiber": "^8.17.10",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
