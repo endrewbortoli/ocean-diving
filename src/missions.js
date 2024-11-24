@@ -761,12 +761,12 @@ const getMissionsByDifficulty = (difficulty) => {
                                         {
                                             id: 'a',
                                             text: "Os animais que vivem em lugares frios não conseguem sobreviver.",
-                                            explanation: "Isso aí! Vamos explorar esse problema mais a fundo?"
+                                            explanation: "Isso aí! E você sabia que a outra resposta também estava certa? Vamos explorar esses problemas mais a fundo."
                                         },
                                         {
                                             id: 'b',
                                             text: "O clima pode mudar",
-                                            explanation: "Sim, está correto! Vamos explorar esse problema mais a fundo?"
+                                            explanation: "Sim, está correto! E você sabia que a outra resposta também estava certa? Vamos explorar esses problemas mais a fundo."
                                         },
                                     ]}
                                     correctAnswerId={null}   //dependendo da resposta ela pula pra uma pergunta diferente
