@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
-const CardWithAnimatedText = ({ coordinates }) => {
+const CardWithAnimatedText = ({ coordinates, difficulty }) => {
   const [displayedText, setDisplayedText] = useState("");
   const [lineIndex, setLineIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
@@ -50,68 +50,80 @@ const CardWithAnimatedText = ({ coordinates }) => {
   }, [lineIndex, charIndex, isErasing]);
 
   return (
-    <div className="card" style={{ position: 'relative', pointerEvents: 'none' }}>
-      <p
-        style={{
-          color: 'white',
-          fontSize: '12px',
-          whiteSpace: 'nowrap',
-          fontWeight: 'bold',
-        }}
-      >
-        STATUS
-      </p>
-      <motion.p
-        key={lineIndex}
-        style={{
-          color: 'white',
-          fontSize: '30px',
-          whiteSpace: 'nowrap',
-          fontWeight: 'bold',
-          lineHeight: 0.1,
-        }}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5 }}
-      >
-        {displayedText}
-      </motion.p>
+    <div className="card" style={{ position: 'relative', width: '100%', height: '100%' }}>
 
-      {showCoordinates && (
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={{
-            hidden: { opacity: 0 },
-            visible: {
-              opacity: 1,
-              transition: {
-                staggerChildren: 0.1,
-              },
-            },
+
+      {/* Texto principal - canto inferior esquerdo */}
+      <div
+        style={{
+          position: 'absolute',
+          bottom: '16px',
+          left: '2px',
+          color: 'white',
+          fontWeight: 'bold',
+          background: 'rgba(0, 0, 0, 0.5)',
+          padding: '12px',
+          borderRadius: '4px',
+        }}
+      >
+        <p
+          style={{
+            fontSize: '32px',
+            marginBottom: '8px',
           }}
         >
-          {coordinates.map((coord, index) => (
-            <motion.p
-              key={index}
-              style={{
-                color: 'red',
-                fontSize: '18px',
-                whiteSpace: 'nowrap',
-                fontFamily: 'monospace',
-                margin: '3px 0',
-              }}
-              variants={{
-                hidden: { opacity: 0, x: -100 },
-                visible: { opacity: 1, x: 0 },
-              }}
-              transition={{ duration: 0.25 }}
-            >
-              {coord}
-            </motion.p>
-          ))}
-        </motion.div>
-      )}
+          STATUS
+        </p>
+        <motion.p
+          key={lineIndex}
+          style={{
+            fontSize: '18px',
+            marginBottom: '12px',
+            lineHeight: 1.5,
+          }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          {displayedText}
+        </motion.p>
+
+        {showCoordinates && (
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: { opacity: 0 },
+              visible: {
+                opacity: 1,
+                transition: {
+                  staggerChildren: 0.1,
+                },
+              },
+            }}
+          >
+            {coordinates.map((coord, index) => (
+              <motion.p
+                key={index}
+                style={{
+                  color: 'red',
+                  fontSize: '16px',
+                  whiteSpace: 'nowrap',
+                  fontFamily: 'monospace',
+                  margin: '6px 0',
+                }}
+                variants={{
+                  hidden: { opacity: 0, x: -100 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+                transition={{ duration: 0.25 }}
+              >
+                {coord}
+              </motion.p>
+            ))}
+          </motion.div>
+        )}
+      </div>
     </div>
   );
 };

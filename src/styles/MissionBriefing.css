@@ -132,7 +132,7 @@
 }
 
 .column-left .button:hover {
-    background-color: #ff5722;
+    background-color: rgb(15, 16, 88);
 }
 
 .column-left .button .icon svg {

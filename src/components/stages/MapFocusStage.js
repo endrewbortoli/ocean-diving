@@ -43,12 +43,12 @@ function MapFocusStage({ images, setStageIndex, nextStage }) {
                 />
                 <p>{mission.text}</p>
               </div>
-              <button onClick={() => focusOnCoordinatesNow(mission)}>Focus on Coordinates</button>
+              <button onClick={() => focusOnCoordinatesNow(mission)}>Focar nas coordenadas</button>
               {index === visibleMissions.length - 1 && visibleMissions.length < images.length && (
-                <button onClick={addMoreMissions}>More</button>
+                <button onClick={addMoreMissions}>Mais</button>
               )}
               {index === visibleMissions.length - 1 && (
-                <button onClick={() => handleNextStage(mission.next)}>Next</button> // Botão para ir ao próximo estágio
+                <button onClick={() => handleNextStage(mission.next)}>Próximo</button> // Botão para ir ao próximo estágio
               )}
             </div>
         ))}

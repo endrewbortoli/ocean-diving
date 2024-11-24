@@ -96,7 +96,7 @@
   right: 20px;
   z-index: 11;
   padding: 10px 20px;
-  background-color: #4CAF50;
+  background-color: #1a1aac;
   color: white;
   border: none;
   border-radius: 5px;
@@ -104,5 +104,5 @@
 }
 
 .audio-toggle-button:active {
-  background-color: #f44336;
+  background-color: #150074;
 }

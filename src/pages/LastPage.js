@@ -164,14 +164,14 @@ export default function App() {
           left: '20px',
           zIndex: 11,
           padding: '10px 20px',
-          backgroundColor: isPlaying ? '#ECAA01' : '#1CAAD9',
+          backgroundColor: isPlaying ? '#1CAAD9' : 'rgb(15, 16, 88)',
           color: 'white',
           border: 'none',
           borderRadius: '5px',
           cursor: 'pointer'
         }}
       >
-        {isPlaying ? 'Mute' : 'Unmute'}
+        {isPlaying ? 'Mutar' : 'Desmutar'}
       </button>
     </>
   );

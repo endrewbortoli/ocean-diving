@@ -97,14 +97,14 @@ const MissionBriefing = ({ isOpen, onClose, missionData, pauseMainAudio }) => {
                             right: '20px',
                             zIndex: 11,
                             padding: '10px 20px',
-                            backgroundColor: isPlaying ? '#f44336' : '#4CAF50',
+                            backgroundColor: isPlaying ? '#2196F3' : 'rgb(15, 16, 88)',
                             color: 'white',
                             border: 'none',
                             borderRadius: '5px',
                             cursor: 'pointer'
                         }}
                     >
-                        {isPlaying ? 'Mute' : 'Unmute'}
+                        {isPlaying ? 'Mutar' : 'Desmutar'}
                     </button>
                 </div>
             </motion.div>

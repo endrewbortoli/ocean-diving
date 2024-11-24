@@ -50,7 +50,7 @@ const OnlyOneQuestion = ({ questionText, options, correctAnswerId, nextStage, se
         {isAnswered && (
           <div className={isCorrect ? "correct-answer" : "incorrect-answer"}>
             <p>
-              <strong>{'Option: '}</strong>
+              <strong>{'Opção: '}</strong>
               {selectedAnswer}
             </p>
             {selectedExplanation && <p>{selectedExplanation}</p>}

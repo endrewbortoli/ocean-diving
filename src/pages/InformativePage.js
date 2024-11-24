@@ -98,7 +98,7 @@ function LandingPage() {
                     cursor: 'pointer'
                 }}
             >
-                {isMuted ? 'Unmute' : 'Mute'}
+                {isMuted ? 'Desmutar' : 'Mutar'}
             </button>
 
             {/* Botão de Voltar */}

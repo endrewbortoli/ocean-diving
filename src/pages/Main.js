@@ -153,30 +153,52 @@ function Main({ missions }) {
           right: '20px',
           zIndex: 11,
           padding: '10px 20px',
-          backgroundColor: isPlaying ? '#f44336' : '#4CAF50',
+          backgroundColor: isPlaying ? '#2196F3' : 'rgb(15, 16, 88)',
           color: 'white',
           border: 'none',
           borderRadius: '5px',
           cursor: 'pointer'
         }}
       >
-        {isPlaying ? 'Mute' : 'Unmute'}
+        {isPlaying ? 'Mutar' : 'Desmutar'}
       </button>
 
       {/* Display the selected difficulty at the bottom-left */}
       <div style={{
         position: 'absolute',
         bottom: '20px',
-        left: '20px',
+        left: '30px',
         zIndex: 11,
         color: 'white',
         fontSize: '18px',
         backgroundColor: 'rgba(0, 0, 0, 0.5)',
         padding: '10px',
-        borderRadius: '5px'
+        borderRadius: '5px',
+        gap:'14px',
       }}>
         Dificuldade: {difficulty}
+
+        <button
+    onClick={() => window.history.back()}
+    style={{
+      padding: '5px 10px',
+      backgroundColor: '#2196F3',
+      color: 'white',
+      border: 'none',
+      borderRadius: '5px',
+      cursor: 'pointer',
+      fontSize: '14px',
+      marginLeft: '12px',
+    }}
+  >
+    Voltar
+  </button>
+
       </div>
+
+
+
+
     </div>
   );
 }

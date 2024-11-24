@@ -10,7 +10,7 @@ function InformativeSectionStage({children, nextStage, setStageIndex}) {
     <div className="informative-section">
         <div className="mission-card-content">
           {children}
-          <button onClick={handleNextStage}>Next</button>
+          <button onClick={handleNextStage}>Próximo</button>
         </div>
     </div>
   );
