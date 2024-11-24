@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ocean-diving/static/css/main.7135d3f1.css",
-    "main.js": "/ocean-diving/static/js/main.8527fd84.js",
+    "main.css": "/ocean-diving/static/css/main.7e975d56.css",
+    "main.js": "/ocean-diving/static/js/main.9ca29823.js",
     "static/js/453.8e4ecc6e.chunk.js": "/ocean-diving/static/js/453.8e4ecc6e.chunk.js",
     "static/media/oman_winter_norm.csv": "/ocean-diving/static/media/oman_winter_norm.9f6f2e63db526942abcf.csv",
     "static/media/earth-min-1.jpg": "/ocean-diving/static/media/earth-min-1.31d08d87ec70cffe6365.jpg",
@@ -88,12 +88,12 @@
     "static/media/golfomexico2.jpg": "/ocean-diving/static/media/golfomexico2.0eb20d4e39d4a24bb0d8.jpg",
     "static/media/zonamorta mapa.webp": "/ocean-diving/static/media/zonamorta mapa.f14614f7a06d526280cd.webp",
     "index.html": "/ocean-diving/index.html",
-    "main.7135d3f1.css.map": "/ocean-diving/static/css/main.7135d3f1.css.map",
-    "main.8527fd84.js.map": "/ocean-diving/static/js/main.8527fd84.js.map",
+    "main.7e975d56.css.map": "/ocean-diving/static/css/main.7e975d56.css.map",
+    "main.9ca29823.js.map": "/ocean-diving/static/js/main.9ca29823.js.map",
     "453.8e4ecc6e.chunk.js.map": "/ocean-diving/static/js/453.8e4ecc6e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7135d3f1.css",
-    "static/js/main.8527fd84.js"
+    "static/css/main.7e975d56.css",
+    "static/js/main.9ca29823.js"
   ]
 }
