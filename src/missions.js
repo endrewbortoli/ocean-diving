@@ -1638,8 +1638,8 @@ const getMissionsByDifficulty = (difficulty) => {
                                         },
                                         {
                                             id: 'd',
-                                            text: "It’s nature’s way of spreading things around",
-                                            explanation: "You got it! Aerosols are tiny particles in the air, one of nature’s tools for moving materials around. Whether it’s dust, water droplets, or even pollen, aerosols can travel long distances in the air."
+                                            text: "É a maneira da natureza de espalhar coisas ao redor.",
+                                            explanation: "Você entendeu! Os aerossóis são partículas minúsculas no ar, uma das ferramentas da natureza para mover materiais. Seja poeira, gotículas de água ou até mesmo pólen, os aerossóis podem viajar longas distâncias no ar."
                                         },
                                     ]}
                                     correctAnswerId={null}
@@ -1653,37 +1653,37 @@ const getMissionsByDifficulty = (difficulty) => {
                             next: 6,
                             component: (
                                 <OnlyOneQuestion
-                                    questionText={"Aerosols can also affect other things, do you know what?"}
+                                    questionText={"Os aerosóis também podem afetar outras coisas, você sabe o que?"}
                                     options={[
                                         {
                                             id: 'a',
-                                            text: "Weather and climate",
+                                            text: "Tempo e clima.",
                                             explanation: "Aerosols can influence weather patterns and the climate by interacting with sunlight. Some aerosols reflect sunlight back into space, cooling the Earth, while others absorb heat, warming the atmosphere."
                                         },
                                         {
                                             id: 'b',
-                                            text: "Cloud formation",
-                                            explanation: "Aerosols play an important role in cloud formation. Tiny aerosol particles can act as 'seeds' for water droplets to form around, helping clouds develop and affecting rainfall."
+                                            text: "Formação de nuvens",
+                                            explanation: "Os aerossóis desempenham um papel importante na formação de nuvens. Partículas de aerossóis minúsculas podem atuar como 'sementes' para que gotículas de água se formem ao redor delas, ajudando no desenvolvimento das nuvens e afetando a chuva."
                                         },
                                         {
                                             id: 'c',
-                                            text: "Air quality",
-                                            explanation: "Aerosols can affect the quality of the air we breathe. Natural aerosols, like sea salt, are usually harmless, but human-made aerosols, like smoke and industrial pollution, can cause health problems, especially for people with respiratory issues."
+                                            text: "Qualidade do ar.",
+                                            explanation: "Os aerossóis podem afetar a qualidade do ar que respiramos. Os aerossóis naturais, como o sal marinho, são geralmente inofensivos, mas os aerossóis produzidos pelo homem, como fumaça e poluição industrial, podem causar problemas de saúde, especialmente para pessoas com problemas respiratórios."
                                         },
                                         {
                                             id: 'd',
-                                            text: "Human health",
-                                            explanation: "Some aerosols, especially those from pollution, can be harmful if inhaled. Particles like soot or chemicals in the air can irritate the lungs, leading to breathing issues or long-term health effects."
+                                            text: "Saúde humana",
+                                            explanation: "Alguns aerossóis, especialmente aqueles provenientes da poluição, podem ser prejudiciais se inalados. Partículas como fuligem ou substâncias químicas no ar podem irritar os pulmões, levando a problemas respiratórios ou efeitos de saúde a longo prazo.."
                                         },
                                         {
                                             id: 'e',
-                                            text: "Visibility",
-                                            explanation: "Aerosols can affect how clear the air looks. High concentrations of aerosols, like smoke or haze, can make it harder to see, reducing visibility."
+                                            text: "Visibilidade",
+                                            explanation: "Os aerossóis podem afetar a clareza do ar. Altas concentrações de aerossóis, como fumaça ou neblina, podem dificultar a visibilidade, reduzindo a capacidade de enxergar."
                                         },
                                         {
                                             id: 'f',
-                                            text: "Ocean ecosystems",
-                                            explanation: "When certain aerosols, like those containing iron, land in the ocean, they can provide nutrients for marine life, particularly tiny organisms like phytoplankton."
+                                            text: "Ecossistemas oceânicos",
+                                            explanation: "Quando certos aerossóis, como aqueles que contêm ferro, caem no oceano, eles podem fornecer nutrientes para a vida marinha, especialmente para organismos minúsculos como o fitoplâncton."
                                         },
                                     ]}
                                     correctAnswerId={null}
@@ -1697,14 +1697,14 @@ const getMissionsByDifficulty = (difficulty) => {
                                 <FinalStage
                                     onArrival={() => console.log('Final stage reached!')}
                                     briefing={{
-                                        title: "Tiny Travelers with Big Effects!",
+                                        title: "Pequenos Viajantes com Grandes Efeitos!",
                                         location: "Mauritania",
                                         image: mauritania,
                                         report: "",
-                                        reportAll: "Congratulations, fellow scientist! We’ve explored the fascinating world of aerosols and their impact on phytoplankton, uncovering how the wind, desert, and ocean work together in surprising ways. From tiny particles floating in the air to nutrient-packed dust delivered by the wind, we now know that aerosols play a big role in shaping ecosystems like the vibrant marine life along Mauritania’s coast. Mission Complete: The Grand Wrap-Up: Throughout this journey, we’ve learned that nature is a vast, interconnected system where even the smallest things, like aerosols, can have powerful effects—some good, some not so much. By examining satellite images, forming hypotheses, and understanding the role of aerosols, we’ve gained valuable insights into how these microscopic particles help sustain life in our oceans. As we wrap up this mission, remember that the mysteries of nature are always waiting to be explored! With every new piece of information, we unlock more secrets, helping us not only to understand the world around us but also to protect it for the future."
+                                        reportAll: "Nós vimos como é muito mais inteligente agir antes que um problema surja, mas quando as coisas dão errado, não podemos simplesmente sentar e esperar. No exemplo de hoje, falamos sobre lama, mas os derramamentos de óleo são uma história completamente diferente. Eles podem ser ainda mais nocivos, permanecendo por muito mais tempo e causando danos maiores à vida marinha. O óleo não apenas turva a água, mas também cobre tudo, desde peixes até aves, tornando difícil para os ecossistemas se recuperar. A coisa legal sobre o uso de imagens é que elas não apenas mostram o que está acontecendo, mas também nos dão pistas sobre o que pode acontecer em seguida. Elas ajudam a rastrear onde a lama, o óleo ou qualquer outra sujeira está indo. Com essa informação, podemos determinar quais áreas podem estar em perigo e implementar medidas protetivas, como bloquear o derramamento, estabelecer barreiras ou enviar equipes de limpeza para o local correto. Essas imagens são como mapas do tesouro, mostrando-nos o melhor caminho a seguir. E mesmo após a limpeza inicial, podemos continuar monitorando como a natureza está se recuperando e garantir que ela retorne à sua força total. Imagens de satélite e outras ferramentas nos permitem monitorar como a natureza está se recuperando e garantir que ela volte à sua força total. Ao agir cedo, responder rapidamente e usar a tecnologia para guiar nossas ações, podemos ajudar a proteger nossas baías, rios e oceanos das ameaças que ameaçam o ecossistema."
                                     }}
                                     badge={{
-                                        name: "Tiny Travelers with Big Effects!",
+                                        name: "Pequenos Viajantes com Grandes Efeitos!",
                                         image: badgeFigure
                                     }}
                                 />
