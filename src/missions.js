@@ -845,7 +845,7 @@ const getMissionsByDifficulty = (difficulty) => {
                     title: "América do Norte",
                     lat: 42.81671,
                     lng: -69.95354,
-                    location: "Northeastern US and Canada",
+                    location: "Nordeste dos EUA e Canadá",
                     image: pace_maine,
                     text: "✨ Sua primeira missão está chegando: Vamos mergulhar nas cores do oceano, descobrindo como a luz refletida na água pode revelar segredos ocultos sobre a vida em todo o mundo! A região, que abrange o Banco Georges e o Golfo do Maine, é renomada por sua rica produtividade biológica, tornando-se historicamente um centro de pesca comercial. No entanto, a sobrepesca e as mudanças climáticas agora representam ameaças significativas a esse ecossistema vital.",
                     initialViewState: {
@@ -958,10 +958,10 @@ const getMissionsByDifficulty = (difficulty) => {
                                     options={[
                                         { id: 'a', text: 'Atividade alienígena: As rachaduras na neve foram causadas por OVNIs pousando, deixando para trás vestígios de visitantes extraterrestres!', explanation: 'Ops, parece que isso não está exatamente certo! A resposta correta é: Sinais iniciais da Primavera: O calor da Primavera que se aproxima está fazendo com que a neve derreta de maneira desigual, deixando rachaduras e manchas de solo exposto.' },
                                         { id: 'b', text: 'Tremores de terremoto: A neve rachada é resultado de pequenos tremores de terremoto, que agitam o solo e dividem a camada de neve.', explanation: 'Ops, parece que isso não está exatamente certo! A resposta correta é: Sinais iniciais da Primavera: O calor da Primavera que se aproxima está fazendo com que a neve derreta de maneira desigual, deixando rachaduras e manchas de solo exposto.' },
-                                        { id: 'c', text: 'Underground creatures: A colony of giant moles is tunneling just beneath the surface, causing the snow to crack and reveal patches of dirt.', explanation: 'Ops, parece que isso não está exatamente certo! A resposta correta é: Sinais iniciais da Primavera: O calor da Primavera que se aproxima está fazendo com que a neve derreta de maneira desigual, deixando rachaduras e manchas de solo exposto.'},
+                                        { id: 'c', text: 'Criaturas subterrâneas: Uma colônia de toupeiras gigantes está cavando justamente abaixo da superfície, fazendo com que a neve trinque e revele áreas de terra.', explanation: 'Ops, parece que isso não está exatamente certo! A resposta correta é: Sinais iniciais da Primavera: O calor da Primavera que se aproxima está fazendo com que a neve derreta de maneira desigual, deixando rachaduras e manchas de solo exposto.'},
                                         { id: 'd', text: 'Sinais iniciais da Primavera: O calor da Primavera que se aproxima está fazendo com que a neve derreta de maneira desigual, deixando rachaduras e manchas de solo exposto.', explanation: 'Parabéns! Você acertou!' }
                                     ]}
-                                    correctAnswerId={'a'}
+                                    correctAnswerId={'d'}
                                     nextStage={4}
                                 />
                             ),
@@ -975,10 +975,10 @@ const getMissionsByDifficulty = (difficulty) => {
                                 <OnlyOneQuestion
                                     questionText={"O azul é água, como podemos ver, mas o que poderia ser o verde?"}
                                     options={[
-                                        { id: 'a', text: 'Algae', explanation: 'Totally! Let\'s look further' },
-                                        { id: 'b', text: 'Pollution', explanation: 'Not in this case! Pollution can look like many colors including green, however we would be able to identify it by other impacts in the environment, like flora and fauna dying and other disturbances' },
-                                        { id: 'c', text: 'Waste', explanation: 'Not in this case, although waste could be this color, we would be able to see its origin and it would negatively impact the environment around it' },
-                                        { id: 'd', text: 'A giant sea monster taking a bath', explanation: 'Fortunately, or unfortunately, no animals exist in our ocean that are that big and green, but the thought that this is a living being (a collection of them) is correct!' }
+                                        { id: 'a', text: 'Algas', explanation: 'Exato! Vamos olhar mais de perto' },
+                                        { id: 'b', text: 'Poluição', explanation: 'Não nesse caso! A poluição pode ter muitas cores, incluindo verde, no entanto, podemos identificá-la por outros impactos no ambiente, como a morte da flora e fauna e outras perturbações.' },
+                                        { id: 'c', text: 'Waste', explanation: 'Não nesse caso, Embora o lixo possa ter essa cor, seríamos capazes de ver sua origem e ele teria um impacto negativo no ambiente ao seu redor.' },
+                                        { id: 'd', text: 'A giant sea monster taking a bath', explanation: 'Felizmente, ou infelizmente, não existem animais em nosso oceano que sejam tão grandes e verdes, mas a ideia de que isso é um ser vivo (uma coleção deles) é correta!' }
                                     ]}
                                     correctAnswerId={'a'}
                                     nextStage={5}  // Ensure this links correctly
@@ -992,15 +992,15 @@ const getMissionsByDifficulty = (difficulty) => {
                             component: (
                                 <InformativeSectionStage nextStage={6}> {/* Update nextStage properly */}
                                     <div className="mission-card-header">
-                                        <h2>The answer is: Algae</h2>
-                                        <h4>Here's some quick facts about it!</h4>
+                                        <h2>A resposta é: Algas</h2>
+                                        <h4>Aqui estão alguns fatos rápidos sobre isso!</h4>
                                     </div>
                                     <div className="image-container">
                                         <img src={phytoplankton}></img>
                                     </div>
                                     <div className="text">
-                                        <p>Phytoplankton are like tiny algae that live in the ocean, lakes, and rivers. Even though they're super small, they’re really important because they make food from sunlight, just like plants in a garden! They also give off oxygen, which helps animals (and us!) breathe. You can think of them as the ocean’s little helpers, keeping everything healthy and full of life!
-                                            Here’s a fun fact! For a long time, people thought the Amazon rainforest was the ‘lungs of the Earth’ because of all the oxygen it produces. But guess what? It’s actually these tiny ocean algae, called phytoplankton, that do most of the work! They make most of the oxygen we breathe, so even though they’re small, they’re true heroes of the planet!
+                                        <p>Os fitoplânctons são como algas minúsculas que vivem nos oceanos, lagos e rios. Embora sejam super pequenos, eles são muito importantes porque produzem alimento a partir da luz solar, assim como as plantas em um jardim! Eles também liberam oxigênio, o que ajuda os animais (e nós!) a respirar. Você pode pensar neles como os pequenos ajudantes do oceano, mantendo tudo saudável e cheio de vida!
+                                        Aqui vai um fato divertido! Por muito tempo, as pessoas pensavam que a floresta amazônica era os ‘pulmões da Terra’ devido à toda a oxigênio que produz. Mas adivinhe o que? Na verdade, são essas algas oceânicas minúsculas, chamadas fitoplânctons, que fazem a maior parte do trabalho! Eles produzem a maior parte do oxigênio que respiramos, então, embora sejam pequenos, são verdadeiros heróis do planeta!
                                         </p>
                                     </div>
                                 </InformativeSectionStage>
@@ -1016,8 +1016,8 @@ const getMissionsByDifficulty = (difficulty) => {
                                             lat: 42.81671,
                                             lng: -69.95354,
                                             image: maine_to_george,
-                                            title: "This is the coast we were looking at!",
-                                            text: "With the satellite image we could see all its beauty!",
+                                            title: "Esta é a costa que estávamos observando.!",
+                                            text: "Com a imagem de satélite, podemos ver toda a sua beleza!",
                                             zoom: 7,
                                         }
                                     ]}
@@ -1030,11 +1030,11 @@ const getMissionsByDifficulty = (difficulty) => {
                             component: <FinalStage
                                 onArrival={() => console.log('Final stage reached!')}
                                 briefing={{
-                                    title: "North America from Above",
-                                    location: "Northeastern US and Canada",
+                                    title: "América do Norte",
+                                    location: "Nordeste dos EUA e Canadá",
                                     image: pace_maine,
-                                    report: "Congratulations! You’ve completed your first mission! Your skills are amazing, and we can’t wait to have your help on our next big adventure!",
-                                    reportAll: "We’ve seen how it’s way smarter to act before a problem pops up, but when things do go wrong, we can’t just sit back. In today’s example, we talked about mud, but oil spills are a whole other story. They can be even nastier, sticking around much longer and causing bigger damage to marine life. Oil doesn’t just muddy the water, it coats everything, from fish to birds, making it hard for ecosystems to bounce back. The cool thing about using images is that they don’t just show us what’s happening, they give us clues about what might happen next! They help us track where the mud, oil, or any other mess is headed. With that info, we can figure out which areas might be in trouble and jump in with protective measures. Whether it’s blocking the spill, setting up barriers, or getting cleanup crews to the right spot, these images are like treasure maps showing us the best path to take. And even after the initial cleanup, we can keep an eye on things. Satellite images and other tools let us monitor how nature is recovering and make sure it gets back to its full strength. By acting early, responding quickly, and using tech to guide us, we can help protect our bays, rivers, and oceans from the messes that threaten the"
+                                    report: "Parabéns! Você completou sua primeira missão! Suas habilidades são incríveis, e não podemos esperar para ter sua ajuda em nossa próxima grande aventura!",
+                                    reportAll: "Nós vimos como é muito mais inteligente agir antes que um problema surja, mas quando as coisas dão errado, não podemos simplesmente sentar e esperar. No exemplo de hoje, falamos sobre lama, mas os derramamentos de óleo são uma história completamente diferente. Eles podem ser ainda mais nocivos, permanecendo por muito mais tempo e causando danos maiores à vida marinha. O óleo não apenas suja a água, ele cobre tudo, desde peixes até aves, tornando difícil para os ecossistemas se recuperar.",
                                 }}
                                 badge={{
                                     name: "North America from Above Mission Emblem",
@@ -1047,12 +1047,12 @@ const getMissionsByDifficulty = (difficulty) => {
                 {
                     index: 1,
                     concluded: false,
-                    title: "Stuck in a Mudstery",
+                    title: "Preso em um Mistério de Lama",
                     lat: 43.671677,
                     lng: -83.821499,
-                    location: "Saginaw Bay, Michigan, US",
+                    location: "Baía de Saginaw, Michigan, EUA",
                     image: saginaw_bay,
-                    text: "Unusual changes are happening in Saginaw Bay after a big storm. The waters are shifting, and things aren’t quite right. Your mission is to explore the bay, uncover what’s causing the trouble. Can you help us solve the challenge before it’s too late? Saginaw Bay Saginaw Bay is a big, shallow area of water in eastern Michigan, right next to Lake Huron. It’s home to all kinds of amazing animals, like fish, birds, and other wildlife. Many people come here to fish, and birds love to visit the nearby wetlands. But over the years, the bay has faced some problems, like pollution and losing important habitats for animals. Thankfully, people are working hard to protect it and keep it healthy so that the bay can stay beautiful and full of life for years to come!",
+                    text: "Mudanças anormais estão acontecendo na Baía de Saginaw após uma grande tempestade. As águas estão se deslocando, e as coisas não estão quite certas. Sua missão é explorar a baía, descobrir o que está causando os problemas e ajudar a resolver o desafio antes que seja tarde demais. A Baía de Saginaw é uma grande e rasa área de água localizada no leste do Michigan, próxima ao Lago Huron. É lar de uma variedade de animais incríveis, como peixes, aves e outras formas de vida selvagem. Muitas pessoas vêm aqui para pescar, e as aves adoram visitar as zonas úmidas próximas. Ao longo dos anos, a baía enfrentou vários problemas, incluindo poluição e a perda de habitats importantes para os animais. No entanto, as pessoas estão trabalhando arduamente para protegê-la e mantê-la saudável, para que a baía possa permanecer bonita e cheia de vida por anos!",
                     displayMap: true,
                     fallbackImage: saginaw_bay,
                     csvPath: sagiData,
@@ -1093,12 +1093,12 @@ const getMissionsByDifficulty = (difficulty) => {
                             next: 1,
                             component: (
                                 <OnlyOneQuestion
-                                    questionText={"What catches your eye in this image?"}
+                                    questionText={"O que chama a sua atenção nessa imagem?"}
                                     options={[
-                                        { id: 'a', text: 'The lack of vibrant green in the water', explanation: 'Hmm, it looks like this area is missing that bright, lush green we would hope for.' },
-                                        { id: 'b', text: 'The blue is not very bright', explanation: 'Looks like that brown stain is messing up the water’s sparkle! Time to put on our detective hats and see what’s behind it.' },
-                                        { id: 'c', text: 'The squares around the water', explanation: 'Look at all those little squares around the bay—they\'re homes, just like yours and mine! But what really catches our eye is that big brown stain in the water. Let’s dig in and see what’s going on!' },
-                                        { id: 'c', text: 'The stain', explanation: 'That brown stain is definitely standing out—it’s affecting the area for sure. Let’s get to the bottom of it and find out what’s happening!' },
+                                        { id: 'a', text: 'A falta de verde vibrante na água', explanation: 'Hmm, realmente parece que essa área está faltando aquele verde brilhante e exuberante que esperaríamos.' },
+                                        { id: 'b', text: 'O azul não é muito vibrante', explanation: 'Parece que aquela mancha marrom está estragando o brilho da água! É hora de colocar nossos chapéus de detetive e descobrir o que está por trás disso.' },
+                                        { id: 'c', text: 'Os quadrados ao redor da água', explanation: 'Olhe para todos aqueles quadrados pequenos ao redor da baía — são casas, assim como as nossas! Mas o que realmente chama a nossa atenção é aquela grande mancha marrom na água. Vamos investigar e ver o que está acontecendo!' },
+                                        { id: 'c', text: 'A mancha', explanation: 'Aquela mancha marrom está definitivamente se destacando — ela está afetando a área com certeza. Vamos descobrir o que está acontecendo!' },
                                     ]}
                                     correctAnswerId={null}
                                     nextStage={1}
@@ -1111,10 +1111,10 @@ const getMissionsByDifficulty = (difficulty) => {
                             next: 2,
                             component: (
                                 <OnlyOneQuestion
-                                    questionText={"Could it be nature doing its thing, or do you think something’s up with the environment? What’s your guess?"}
+                                    questionText={"Será que é a natureza fazendo o seu trabalho, ou você acha que há algo errado com o ambiente? O que você acha?"}
                                     options={[
-                                        { id: 'a', text: 'It\'s natural! Mother Nature’s just changing the scenery.', explanation: 'Good thinking! It could just be how this region looks without all the phytoplankton. But hey, that big brown splotch in the water is hard to miss! Let’s dive deeper and figure out what it is and what kind of splash it’s making!' },
-                                        { id: 'b', text: 'It’s an environmental impact! Something’s affecting this spot.', explanation: 'You’ve got a sharp eye! That brown stain is definitely up to no good here. Time to roll up our sleeves and investigate what\'s really going on!' },
+                                        { id: 'a', text: 'É natural! A Mãe Natureza está apenas mudando a paisagem.', explanation: 'Boa ideia! Pode ser apenas como essa região looks sem todo o fitoplâncton. Mas ei, aquela grande mancha marrom na água é difícil de ignorar! Vamos mergulhar mais fundo e descobrir o que é e que tipo de impacto ela está causando!' },
+                                        { id: 'b', text: 'Sim, é um impacto ambiental! Algo está afetando esse local.', explanation: 'Você tem um olho afiado! Aquela mancha marrom definitivamente não está fazendo nada de bom aqui. É hora de arregaçar as mangas e investigar o que está realmente acontecendo!' },
                                     ]}
                                     correctAnswerId={null}
                                     nextStage={2}
@@ -1127,12 +1127,12 @@ const getMissionsByDifficulty = (difficulty) => {
                             next: 3,
                             component: (
                                 <OnlyOneQuestion
-                                    questionText={"Where did this brown stain come from?"}
+                                    questionText={"De onde veio essa mancha marrom?"}
                                     options={[
-                                        { id: 'a', text: 'It looks like it came from a river', explanation: 'Zooming in, we can spot a river hiding in plain sight! Its waters are the same shade of brown as the land around it. It seems like that’s the source, but the mystery continues—something outside the image might have started it all.' },
-                                        { id: 'b', text: 'It came from somewhere outside the image', explanation: 'Zooming in, we can spot a river hiding in plain sight! Its waters are the same shade of brown as the land around it. It seems like that’s the source, but the mystery continues—something outside the image might have started it all.' },
-                                        { id: 'c', text: 'It appeared spontaneously', explanation: 'Hmm, the storm might have stirred up more than just a breeze! After taking a closer peek, we can spot a river sneaking through. Its waters are so brown, they blend right into the land, looks like that’s where the brown stain is coming from!' },
-                                        { id: 'd', text: 'Many people swimming stirred up sediment from the bottom of the water', explanation: 'Hmm, the storm might have stirred up more than just a breeze! After taking a closer peek, we can spot a river sneaking through. Its waters are so brown, they blend right into the land, looks like that’s where the brown stain is coming from!' },
+                                        { id: 'a', text: 'Parece que veio de um rio.', explanation: 'Ao zoomar, podemos avistar um rio escondido à vista! Suas águas têm a mesma tonalidade marrom da terra ao redor. Parece que essa é a fonte, mas o mistério continua — algo fora da imagem pode ter iniciado tudo.' },
+                                        { id: 'b', text: 'Ela veio de algum lugar fora da imagem.', explanation: 'Ao zoomar, podemos avistar um rio escondido à vista! Suas águas têm a mesma tonalidade marrom da terra ao redor. Parece que essa é a fonte, mas o mistério continua — algo fora da imagem pode ter iniciado tudo.' },
+                                        { id: 'c', text: 'Ela apareceu espontaneamente.', explanation: 'Hmm, a tempestade pode ter agitado mais do que apenas uma brisa! Após dar uma olhada mais de perto, podemos avistar um rio se esgueirando. Suas águas estão tão marrom que se misturam perfeitamente com a terra, parece que é de lá que vem a mancha marrom!' },
+                                        { id: 'd', text: 'Muitas pessoas nadando agitaram o sedimento do fundo da água.', explanation: 'Hmm, a tempestade pode ter agitado mais do que apenas uma brisa! Após dar uma olhada mais de perto, podemos avistar um rio se esgueirando. Suas águas estão tão marrom que se misturam perfeitamente com a terra, parece que é de lá que vem a mancha marrom!' },
                                     ]}
                                     correctAnswerId={null}
                                     nextStage={3}
@@ -1145,10 +1145,10 @@ const getMissionsByDifficulty = (difficulty) => {
                             next: 4,
                             component: (
                                 <OnlyOneQuestion
-                                    questionText={"It seems that those heavy rains brought more than just a downpour. Some water reservoirs couldn’t handle it, and now a whole lot of mud has found its way into the river and out into the bay. What do you think this could mean for the creatures living here?"}
+                                    questionText={"Parece que aquelas chuvas intensas trouxeram mais do que apenas uma tempestade. Alguns reservatórios de água não conseguiram lidar com a situação, e agora uma grande quantidade de lama encontrou seu caminho para o rio e para a baía. O que você acha que isso pode significar para as criaturas que vivem aqui?"}
                                     options={[
-                                        { id: 'a', text: "There was no impact, it's just mud!", explanation: "A little mud is no big deal, but we’re talking about a lot of mud here! Imagine the biggest swimming pool you’ve ever seen filled to the brim with mud, and now imagine that times 100. That’s a whole lot of mud, and it can really shake things up." },
-                                        { id: 'b', text: 'Many fish and algae may have died', explanation: "You're right, that amount of mud is terrible!" },
+                                        { id: 'a', text: "Não teve nehum impacto, é só lama!", explanation: "Um pouco de lama não é grande coisa, mas estamos falando de uma grande quantidade de lama aqui! Imagine a maior piscina de natação que você já viu cheia até a borda de lama, e agora imagine isso multiplicado por 100. Isso é uma quantidade enorme de lama, e pode realmente mexer com as coisas." },
+                                        { id: 'b', text: 'Muitos peixes e algas devem ter morrido.', explanation: "Você está certo, essa quantidade de lama é terrível!" },
                                     ]}
                                     correctAnswerId={'b'}
                                     nextStage={4}
@@ -1162,15 +1162,15 @@ const getMissionsByDifficulty = (difficulty) => {
                             component: (
                                 <InformativeSectionStage nextStage={5}>
                                     <div className="mission-card-header">
-                                        <h2>Mud flows</h2>
-                                        <h4>This map shows the light reflection of the water! Bigger particles, like mud, can really affect it, that could be the reason behind the patterns we observe in the map! </h4>
+                                        <h2>Fluxos de lama</h2>
+                                        <h4>Esse mapa mostra a reflexão da luz na água! Partículas maiores, como a lama, podem afetá-la significativamente, e isso pode ser a razão por trás dos padrões que observamos no mapa! </h4>
                                     </div>
                                     <div className="image-container">
                                         <img src={mud_spill_rebuilding}></img>
                                     </div>
                                     <div className="text">
-                                        <p>When all this mud enters the water, it stirs up the ecosystem. The water gets murky, making it hard for sunlight to reach the bottom. Without enough sunlight, the plants and algae that need it for energy can’t do their job, and eventually, they start to die off. These algae are super important because they’re at the base of the food chain, feeding fish, crustaceans, and lots of other creatures.
-                                            But that’s not all. All that mud also brings a load of organic matter with it. As this matter breaks down, it uses up the oxygen in the water. This can cause hypoxia, which is a fancy way of saying there’s not enough oxygen for fish and other animals to breathe. Without oxygen, many of them might not survive. So, this big muddy mess can throw off the whole balance of the bay, making it tough for the creatures that call it home.
+                                        <p>Quando toda essa lama entra na água, ela perturba o ecossistema. A água fica turva, tornando difícil para a luz solar alcançar o fundo. Sem luz solar suficiente, as plantas e algas que precisam dela para energia não conseguem fazer seu trabalho e, eventualmente, começam a morrer. Essas algas são super importantes porque estão na base da cadeia alimentar, alimentando peixes, crustáceos e muitas outras criaturas.
+                                        Mas isso não é tudo. Toda essa lama também traz uma grande quantidade de matéria orgânica com ela. À medida que essa matéria se decompõe, ela consome o oxigênio da água. Isso pode causar hipoxia, que é uma forma elegante de dizer que não há oxigênio suficiente para os peixes e outros animais respirarem. Sem oxigênio, muitos deles podem não sobreviver. Então, essa grande bagunça lamacenta pode desequilibrar todo o balanço da baía, tornando difícil para as criaturas que a chamam de lar.
                                         </p>
                                     </div>
                                 </InformativeSectionStage>
@@ -1182,13 +1182,13 @@ const getMissionsByDifficulty = (difficulty) => {
                             next: 6,
                             component: (
                                 <OnlyOneQuestion
-                                    questionText={"How can we solve this problem?"}
+                                    questionText={"Como podemos resolver esse problema?"}
                                     options={[
-                                        { id: 'a', text: "There is nothing to be done", explanation: "Come on, don’t be so gloomy! There’s always something we can do! Let’s head back and think again." },
-                                        { id: 'b', text: 'Stop the mud', explanation: "Stopping the mud completely is a tall order and pretty costly too. The real trick is to focus on making sure this doesn’t happen again in the future." },
-                                        { id: 'c', text: 'Invent a method that does not yet exist', explanation: "I love your creativity! New ideas are always welcome, and who knows what we’ll discover in the future. For now, though, we need to take steps to stop the problem from getting worse and, of course, prevent it from happening again." },
-                                        { id: 'd', text: 'Take measures to prevent it from happening again', explanation: "Exactly! Preventive measures are the way to go if we want to stop this from becoming a recurring issue." },
-                                        { id: 'e', text: 'Take palliative measures (measures to reduce the damage we cannot prevent)', explanation: "Palliative measures are helpful for sure. Whether it’s temporary barriers or other strategies, they can provide some relief in the short term." },
+                                        { id: 'a', text: "Não há nada a ser feito.", explanation: "Vamos, não seja tão pessimista! Sempre há algo que podemos fazer! Vamos voltar e pensar de novo." },
+                                        { id: 'b', text: 'Parar a lama', explanation: "Parar a lama completamente é uma tarefa difícil e bastante custosa também. O verdadeiro truque é se concentrar em garantir que isso não aconteça novamente no futuro." },
+                                        { id: 'c', text: 'Inventar um método que ainda não existe', explanation: "Adoro sua criatividade! Novas ideias são sempre bem-vindas, e quem sabe o que descobriremos no futuro. No entanto, por enquanto, precisamos tomar medidas para evitar que o problema piore e, claro, prevenir que isso aconteça novamente." },
+                                        { id: 'd', text: 'Tomar medidas para evitar que isso aconteça novamente.', explanation: "Exatamente! Medidas preventivas são o caminho a seguir se queremos evitar que isso se torne um problema recorrente." },
+                                        { id: 'e', text: 'Adote medidas paliativas (medidas para reduzir os danos que não podemos prevenir).', explanation: "Medidas paliativas são certamente úteis. Seja através de barreiras temporárias ou outras estratégias, elas podem proporcionar algum alívio a curto prazo." },
                                     ]}
                                     correctAnswerId={null}
                                     nextStage={6}
@@ -1205,8 +1205,8 @@ const getMissionsByDifficulty = (difficulty) => {
                                             lat: 43.648052,
                                             lng: -83.850347,
                                             image: saginaw_pace,
-                                            title: "The Saginaw Bay is a beautiful area but it may need a little help!",
-                                            text: "We humans impact the world around us, look around your own environment, how do you think you change it? How do you think you can help the world around you, humans, land and oceans alike?",
+                                            title: "A Baía de Saginaw é uma área bela, mas ela pode precisar de um pouco de ajuda!",
+                                            text: "Nós, humanos, impactamos o mundo ao nosso redor. Olhe ao redor do seu próprio ambiente, como você acha que o está mudando? Como você acha que pode ajudar o mundo ao seu redor, incluindo os humanos, a terra e os oceanos?",
                                             zoom: 10,
                                         },
                                     ]}
@@ -1217,13 +1217,13 @@ const getMissionsByDifficulty = (difficulty) => {
                             displayMap: true,
                             component: (
                                 <FinalStage
-                                    onArrival={() => console.log('Final stage reached!')}
+                                    onArrival={() => console.log('Fase final alcançada!')}
                                     briefing={{
-                                        title: "Stuck in a Mudstery",
-                                        location: "Saginaw Bay, Michigan, US",
+                                        title: "Preso em um Mistério de Lama",
+                                        location: "Baía de Saginaw, Michigan, EUA",
                                         image: saginaw_bay,
-                                        report: "Yay! Thanks to your help, we figured out what’s going on in Saginaw Bay with all this mud and started thinking up clever ways to fix it!",
-                                        reportAll: "We’ve seen how it’s way smarter to act before a problem pops up, but when things do go wrong, we can’t just sit back. In today’s example, we talked about mud, but oil spills are a whole other story. They can be even nastier, sticking around much longer and causing bigger damage to marine life. Oil doesn’t just muddy the water, it coats everything, from fish to birds, making it hard for ecosystems to bounce back. The cool thing about using images is that they don’t just show us what’s happening, they give us clues about what might happen next! They help us track where the mud, oil, or any other mess is headed. With that info, we can figure out which areas might be in trouble and jump in with protective measures. Whether it’s blocking the spill, setting up barriers, or getting cleanup crews to the right spot, these images are like treasure maps showing us the best path to take. And even after the initial cleanup, we can keep an eye on things. Satellite images and other tools let us monitor how nature is recovering and make sure it gets back to its full strength. By acting early, responding quickly, and using tech to guide us, we can help protect our bays, rivers, and oceans from the messes that threaten the"
+                                        report: "Ótimo! Graças à sua ajuda, descobrimos o que está acontecendo na Baía de Saginaw com toda essa lama e começamos a pensar em maneiras inteligentes para resolver o problema!",
+                                        reportAll: "Nós vimos como é muito mais inteligente agir antes que um problema surja, mas quando as coisas dão errado, não podemos simplesmente sentar e esperar. No exemplo de hoje, falamos sobre lama, mas os derramamentos de óleo são uma história completamente diferente. Eles podem ser ainda mais nocivos, permanecendo por muito mais tempo e causando danos maiores à vida marinha. O óleo não apenas turva a água, mas também cobre tudo, desde peixes até aves, tornando difícil para os ecossistemas se recuperar. A coisa legal sobre o uso de imagens é que elas não apenas mostram o que está acontecendo, mas também nos dão pistas sobre o que pode acontecer em seguida. Elas ajudam a rastrear onde a lama, o óleo ou qualquer outra sujeira está indo. Com essa informação, podemos determinar quais áreas podem estar em perigo e implementar medidas protetivas, como bloquear o derramamento, estabelecer barreiras ou enviar equipes de limpeza para o local correto. Essas imagens são como mapas do tesouro, mostrando-nos o melhor caminho a seguir. E mesmo após a limpeza inicial, podemos continuar monitorando como a natureza está se recuperando e garantir que ela retorne à sua força total. Imagens de satélite e outras ferramentas nos permitem monitorar como a natureza está se recuperando e garantir que ela volte à sua força total. Ao agir cedo, responder rapidamente e usar a tecnologia para guiar nossas ações, podemos ajudar a proteger nossas baías, rios e oceanos das ameaças que ameaçam o ecossistema.",
                                     }}
                                     badge={{
                                         name: "Stuck in a Mudstery Mission Emblem ",
@@ -1237,12 +1237,12 @@ const getMissionsByDifficulty = (difficulty) => {
                 {
                     index: 2,
                     concluded: false,
-                    title: "Hidden Springs, Hidden Secrets",
+                    title: "Nascentes Ocultas, Segredos Ocultos",
                     lat: 24.772691,
                     lng: 57.524873,
                     location: "Oman",
                     image: oman_picture,
-                    text: "The water is full of all kinds of phytoplankton species, and right now, the main way to tell them apart is by scooping up water samples—talk about time-consuming and pricey! But what if we could use images to tell them apart instead, and maybe even discover more? Oman, located at the southeastern tip of the Arabian Peninsula, is a country of stunning landscapes and warm climate. Its coastline boasts crystal-clear waters that are home to a rich marine biodiversity, including turtles and dolphins. The proliferation of phytoplankton in the coastal waters plays a crucial role in this ecosystem, serving as the foundation of the food chain and contributing to the health of the oceans. This connection between nature and culture highlights how Oman is a fascinating destination.",
+                    text: "A água está repleta de diversas espécies de fitoplâncton, e atualmente, a principal maneira de distingui-las é coletando amostras de água — pense em algo demorado e caro! Mas e se pudéssemos usar imagens para distingui-las em vez disso, e talvez até descobrir mais? Omã, localizado na ponta sudeste da Península Arábica, é um país de paisagens deslumbrantes e clima quente. Sua costa ostenta águas cristalinas que são lar de uma rica biodiversidade marinha, incluindo tartarugas e golfinhos. A proliferação de fitoplâncton nas águas costeiras desempenha um papel crucial neste ecossistema, servindo como a base da cadeia alimentar e contribuindo para a saúde dos oceanos. Essa conexão entre a natureza e a cultura destaca como Omã é um destino fascinante.",
                     displayMap: true,
                     fallbackImage: oman_pace,
                     csvPath: omanData,
@@ -1283,17 +1283,17 @@ const getMissionsByDifficulty = (difficulty) => {
                             next: 1,
                             component: (
                                 <OnlyOneQuestion
-                                    questionText={"Oman is an amazing place, bursting with all kinds of life and beauty! Take a look at the image, can you spot that?"}
+                                    questionText={"Omã é um lugar incrível, repleto de todas as formas de vida e beleza! Dê uma olhada na imagem, consegue identificar isso?"}
                                     options={[
                                         {
                                             id: 'a',
-                                            text: "Nope",
-                                            explanation: "Take a closer look at all that green! You can spot different shades, from deep, dark green to bright, light green. These colors could be showing us a variety of phytoplankton species living in this area."
+                                            text: "Não",
+                                            explanation: "Dê uma olhada mais de perto em todo aquele verde! Você pode identificar diferentes tonalidades, desde um verde escuro e profundo até um verde claro e brilhante. Essas cores podem estar nos mostrando uma variedade de espécies de fitoplâncton que vivem nesta área."
                                         },
                                         {
                                             id: 'b',
-                                            text: 'Absolutely',
-                                            explanation: "You’ve got it! Those different shades of green, from the darkest to the lightest, likely point to a variety of phytoplankton species hanging out in this region."
+                                            text: 'Sim',
+                                            explanation: "Você acertou! Aquelas diferentes tonalidades de verde, desde a mais escura até a mais clara, provavelmente indicam uma variedade de espécies de fitoplâncton presentes nesta região."
                                         },
                                     ]}
                                     correctAnswerId={null}
@@ -1307,17 +1307,17 @@ const getMissionsByDifficulty = (difficulty) => {
                             next: 2,
                             component: (
                                 <OnlyOneQuestion
-                                    questionText={"This map helps us see the presence of phytoplankton in the oceans! We can get this data because they contain pigments like chlorophyll that absorb light at specific wavelengths. Look at the scale and explore the ocean around Oman a bit and search for them! Does the observed phytoplankton affect other species of animals?"}
+                                    questionText={"Este mapa nos ajuda a ver a presença de fitoplâncton nos oceanos! Podemos obter esses dados porque eles contêm pigmentos como a clorofila que absorvem luz em comprimentos de onda específicos. Olhe para a escala e explore o oceano ao redor de Omã um pouco e procure por eles! O fitoplâncton observado afeta outras espécies de animais?"}
                                     options={[
                                         {
                                             id: 'a',
-                                            text: "No",
-                                            explanation: "Look back at what we saw! Phytoplankton is super important; it’s the base of the food chain and helps keep the planet’s oxygen levels in check."
+                                            text: "Não",
+                                            explanation: "Olhe de volta para o que vimos! O fitoplâncton é super importante; ele é a base da cadeia alimentar e ajuda a manter os níveis de oxigênio do planeta em equilíbrio."
                                         },
                                         {
                                             id: 'b',
-                                            text: 'Yes',
-                                            explanation: "You’re spot on! Phytoplankton plays a key role in the food chain and is essential for maintaining the planet's oxygen."
+                                            text: 'Sim',
+                                            explanation: "Você está absolutamente certo! O fitoplâncton desempenha um papel fundamental na cadeia alimentar e é essencial para manter os níveis de oxigênio do planeta."
                                         },
                                     ]}
                                     correctAnswerId={null}
@@ -1332,15 +1332,14 @@ const getMissionsByDifficulty = (difficulty) => {
                             component: (
                                 <InformativeSectionStage nextStage={3}>
                                     <div className="mission-card-header">
-                                        <h2>Phytoplankton</h2>
-                                        <h4>Here's some quick facts about it!</h4>
+                                        <h2>Fitoplâncton</h2>
+                                        <h4>Aqui estão alguns fatos rápidos sobre!</h4>
                                     </div>
                                     <div className="image-container">
                                         <img src={phytoplankton}></img>
                                     </div>
                                     <div className="text">
-                                        <p>The food chain is kind of like nature’s dinner party! It’s all about who’s eating and who’s being eaten, with energy passing along the line. It starts with the chefs—plants and tiny phytoplankton—that whip up energy from sunlight. Then, little critters like zooplankton come along for a bite. After that, small fish snack on those critters, and bigger fish come in to munch on the smaller ones. It keeps going until we get to the ocean’s top diners, like sharks or whales!
-                                            Phytoplankton are the tiny heroes at the base of this party. Without them, no one else gets to eat, and the whole chain could fall apart. So, they’re super important to keep the food chain running smoothly!
+                                        <p>A cadeia alimentar é um pouco como o jantar da natureza! Tudo gira em torno de quem come e quem é comido, com a energia passando ao longo da linha. Começa com os cozinheiros — plantas e o pequeno fitoplâncton — que preparam energia a partir da luz solar. Em seguida, pequenos bichinhos como o zooplâncton vêm para uma mordida. Depois disso, peixes pequenos se alimentam desses bichinhos, e peixes maiores vêm para mastigar os menores. Isso continua até chegarmos aos principais comensais do oceano, como tubarões ou baleias! Os fitoplânctons são os pequenos heróis na base dessa festa. Sem eles, ninguém mais consegue se alimentar, e toda a cadeia poderia desmoronar. Portanto, eles são super importantes para manter a cadeia alimentar funcionando suavemente!
                                         </p>
                                     </div>
                                 </InformativeSectionStage>
@@ -1352,37 +1351,37 @@ const getMissionsByDifficulty = (difficulty) => {
                             next: 4,
                             component: (
                                 <OnlyOneQuestion
-                                    questionText={"What do you think could happen if the numbers of phytoplankton start to drop?"}
+                                    questionText={"O que você acha que poderia acontecer se os números de fitoplâncton começarem a diminuir?"}
                                     options={[
                                         {
                                             id: 'a',
-                                            text: "Phytoplankton will turn into seaweed",
-                                            explanation: "Nope, that’s not how it works! Phytoplankton are tiny and different from seaweed, and they can’t just transform."
+                                            text: "O fitoplâncton se transformará em algas marinhas.",
+                                            explanation: "Não, não é assim que funciona! O fitoplâncton é minúsculo e diferente das algas marinhas, e eles não podem se transformar simplesmente."
                                         },
                                         {
                                             id: 'b',
-                                            text: 'The oceans will dry up',
-                                            explanation: "Nah, oceans might get warmer, but they won’t vanish!"
+                                            text: 'Os oceanos secarão.',
+                                            explanation: "Não, os oceanos podem esquentar, mas não vão desaparecer!"
                                         },
                                         {
                                             id: 'c',
-                                            text: 'Phytoplankton will move to live on land',
-                                            explanation: "No way! These little guys are ocean dwellers—they can't pack up and move to the land like plants."
+                                            text: 'O fitoplâncton irá se mudar para viver em terra.',
+                                            explanation: "De jeito nenhum! Esses pequenos são habitantes do oceano — eles não podem embalar as coisas e se mudar para a terra como as plantas."
                                         },
                                         {
                                             id: 'd',
-                                            text: 'Fish will start producing their own food',
-                                            explanation: "Nope, fish can’t suddenly become chefs—they rely on what’s in the food chain!"
+                                            text: 'Os peixes começarão a produzir seu próprio alimento.',
+                                            explanation: "Não, os peixes não podem de repente se tornar cozinheiros — eles dependem do que está na cadeia alimentar!"
                                         },
                                         {
                                             id: 'e',
-                                            text: 'Less food for marine life',
-                                            explanation: "Yep, if phytoplankton drop, sea creatures that rely on them might go hungry."
+                                            text: 'Menos alimento para a vida marinha.',
+                                            explanation: "Sim, se o fitoplâncton diminuir, as criaturas marinhas que dependem dele podem passar fome."
                                         },
                                         {
                                             id: 'f',
-                                            text: 'Impact on oxygen levels',
-                                            explanation: "Correct! Phytoplankton help make oxygen, so fewer of them could affect the air we breathe."
+                                            text: 'Impacto nos níveis de oxigênio',
+                                            explanation: "Correto! O fitoplâncton ajuda a produzir oxigênio, então ter menos deles poderia afetar o ar que respiramos."
                                         },
                                     ]}
                                     correctAnswerId={null}
@@ -1396,32 +1395,31 @@ const getMissionsByDifficulty = (difficulty) => {
                             next: 5,
                             component: (
                                 <OnlyOneQuestion
-                                    questionText={"How can a picture like this help us protect nature and understand what’s happening?"}
+                                    questionText={"Como uma imagem como essa pode nos ajudar a proteger a natureza e entender o que está acontecendo?"}
                                     options={[
                                         {
                                             id: 'a',
-                                            text: "A picture shows us where nature might be in trouble!",
-                                            explanation: "Exactly! We can see changes in landscapes, spot endangered species, and track how healthy ecosystems are."
+                                            text: "Uma imagem nos mostra onde a natureza pode estar em apuros!",
+                                            explanation: "Exatamente! Podemos ver mudanças nos paisagens, identificar espécies ameaçadas e acompanhar a saúde dos ecossistemas."
                                         },
                                         {
                                             id: 'b',
-                                            text: 'It helps us find patterns!',
-                                            explanation: "Absolutely! By looking at images over time, we can spot changes like shrinking forests or fewer animals, giving us clues on what needs protecting."
+                                            text: 'Isso nos ajuda a encontrar padrões!',
+                                            explanation: "Absolutamente! Ao analisar imagens ao longo do tempo, podemos identificar mudanças como florestas encolhendo ou menos animais, nos dando pistas sobre o que precisa ser protegido."
                                         },
                                         {
                                             id: 'c',
-                                            text: 'Pictures let us see without disturbing!',
-                                            explanation: "You’re spot on! We can observe wildlife and nature from a distance, gathering information without interrupting the natural world."
+                                            text: 'Imagens nos permitem ver sem perturbar!',
                                         },
                                         {
                                             id: 'd',
                                             text: 'They spread the word!',
-                                            explanation: "Exactly! A powerful image can inspire others to care about nature and take action to protect it."
+                                            explanation: "Exatamente! Uma imagem poderosa pode inspirar os outros a se importar com a natureza e tomar ações para protegê-la."
                                         },
                                         {
                                             id: 'e',
-                                            text: 'It’s like a map for conservation!',
-                                            explanation: "Correct! Images help scientists and conservationists know where to focus their efforts to save biodiversity."
+                                            text: 'É como um mapa para a conservação!',
+                                            explanation: "Correto! As imagens ajudam cientistas e conservacionistas a saber onde concentrar seus esforços para salvar a biodiversidade."
                                         },
                                     ]}
                                     correctAnswerId={null}
@@ -1435,11 +1433,11 @@ const getMissionsByDifficulty = (difficulty) => {
                                 <FinalStage
                                     onArrival={() => console.log('Final stage reached!')}
                                     briefing={{
-                                        title: "Hidden Springs, Hidden Secrets",
-                                        location: "Oman",
+                                        title: "Nascentes Ocultas, Segredos Ocultos",
+                                        location: "Omã",
                                         image: oman_picture,
-                                        report: "Woohoo! We did it! We figured out how to tell phytoplankton apart and went even further, chatting about just how important they are. Plus, we explored how their disappearance could impact not just the region, but the entire planet! What an adventure!.",
-                                        reportAll: "We’ve seen how it’s way smarter to act before a problem pops up, but when things do go wrong, we can’t just sit back. In today’s example, we talked about mud, but oil spills are a whole other story. They can be even nastier, sticking around much longer and causing bigger damage to marine life. Oil doesn’t just muddy the water, it coats everything, from fish to birds, making it hard for ecosystems to bounce back. The cool thing about using images is that they don’t just show us what’s happening, they give us clues about what might happen next! They help us track where the mud, oil, or any other mess is headed. With that info, we can figure out which areas might be in trouble and jump in with protective measures. Whether it’s blocking the spill, setting up barriers, or getting cleanup crews to the right spot, these images are like treasure maps showing us the best path to take. And even after the initial cleanup, we can keep an eye on things. Satellite images and other tools let us monitor how nature is recovering and make sure it gets back to its full strength. By acting early, responding quickly, and using tech to guide us, we can help protect our bays, rivers, and oceans from the messes that threaten the"
+                                        report: "Uau! Nós conseguimos! Descobrimos como distinguir o fitoplâncton e fomos ainda mais longe, conversando sobre quão importante ele é. Além disso, exploramos como a sua desaparição poderia impactar não apenas a região, mas o planeta inteiro! Que aventura!",
+                                        reportAll: "Nós vimos como é muito mais inteligente agir antes que um problema surja, mas quando as coisas dão errado, não podemos simplesmente sentar e esperar. No exemplo de hoje, falamos sobre lama, mas os derramamentos de óleo são uma história completamente diferente. Eles podem ser ainda mais nocivos, permanecendo por muito mais tempo e causando danos maiores à vida marinha. O óleo não apenas turva a água, mas também cobre tudo, desde peixes até aves, tornando difícil para os ecossistemas se recuperar. A coisa legal sobre o uso de imagens é que elas não apenas mostram o que está acontecendo, mas também nos dão pistas sobre o que pode acontecer em seguida. Elas ajudam a rastrear onde a lama, o óleo ou qualquer outra sujeira está indo. Com essa informação, podemos determinar quais áreas podem estar em perigo e implementar medidas protetivas, como bloquear o derramamento, estabelecer barreiras ou enviar equipes de limpeza para o local correto. Essas imagens são como mapas do tesouro, mostrando-nos o melhor caminho a seguir. E mesmo após a limpeza inicial, podemos continuar monitorando como a natureza está se recuperando e garantir que ela retorne à sua força total. Imagens de satélite e outras ferramentas nos permitem monitorar como a natureza está se recuperando e garantir que ela volte à sua força total. Ao agir cedo, responder rapidamente e usar a tecnologia para guiar nossas ações, podemos ajudar a proteger nossas baías, rios e oceanos das ameaças que ameaçam o ecossistema."
                                     }}
                                     badge={{
                                         name: "Hidden Springs, Hidden Secrets Mission Emblem",
@@ -1456,9 +1454,9 @@ const getMissionsByDifficulty = (difficulty) => {
                     title: "Tiny Travelers with Big Effects!",
                     lat: 19.96057,
                     lng: -16.70246,
-                    location: "Mauritania",
+                    location: "Mauritânia",
                     image: mauritania,
-                    text: "Your mission, should you choose to accept it, is to dive into the world of aerosols and uncover how these tiny airborne particles impact the mighty phytoplankton population! Are aerosols helping them thrive, or causing a challenge for their growth? Time to find out! Mauritania is a large, mostly desert country located in Northwest Africa, bordered by the Atlantic Ocean to the west. Its vast landscapes range from sandy dunes to rocky plateaus and coastal plains. Much of Mauritania is dominated by the Sahara Desert, making it one of the driest nations in the world, with sparse vegetation and a harsh climate. Its coastal waters, particularly along the Canary Current, are renowned for a natural phenomenon called upwelling, where nutrient-rich waters from the ocean depths rise to the surface. This process sparks the Mauritania bloom, an explosion of microscopic algae, or phytoplankton, that supports a rich marine ecosystem. The Mauritania bloom plays a vital role in sustaining one of the world’s most productive fishing zones. Fish like sardines, mackerel, and other species thrive in these nutrient-rich waters, contributing significantly to the livelihoods of local communities and fueling the country's fishing industry. Mauritania’s coastal waters become a hotspot of marine life during the bloom season, attracting fishermen and birds alike.",
+                    text: "Sua missão, se você escolher aceitá-la, é mergulhar no mundo dos aerossóis e descobrir como essas pequenas partículas aerotransportadas impactam a poderosa população de fitoplâncton. Os aerossóis estão ajudando o fitoplâncton a prosperar ou causando desafios para seu crescimento? É hora de descobrir! A Mauritânia é um país grande, principalmente desértico, localizado no noroeste da África, limitado pelo Oceano Atlântico a oeste. Seus vastos paisagens variam de dunas de areia a planaltos rochosos e planícies costeiras. Grande parte da Mauritânia é dominada pelo Deserto do Saara, tornando-a uma das nações mais áridas do mundo, com vegetação escassa e um clima severo. As águas costeiras da Mauritânia, particularmente ao longo da Corrente das Canárias, são renomadas por um fenômeno natural chamado ressurgência, onde águas ricas em nutrientes das profundezas do oceano sobem à superfície. Esse processo desencadeia a floração da Mauritânia, uma explosão de algas microscópicas, ou fitoplâncton, que sustenta um rico ecossistema marinho. A floração da Mauritânia desempenha um papel vital na manutenção de uma das zonas de pesca mais produtivas do mundo. Peixes como sardinha, cavala e outras espécies prosperam nessas águas ricas em nutrientes, contribuindo significativamente para a subsistência das comunidades locais e impulsionando a indústria pesqueira do país. As águas costeiras da Mauritânia se tornam um ponto quente de vida marinha durante a temporada de floração, atraindo pescadores e aves.",
                     displayMap: true,
                     fallbackImage: mauritania,
                     csvPath: omanData,
@@ -1499,22 +1497,22 @@ const getMissionsByDifficulty = (difficulty) => {
                             next: 1,
                             component: (
                                 <OnlyOneQuestion
-                                    questionText={"What do you notice that is different in this image?"}
+                                    questionText={"O que você percebeu de diferente nessa imagem?"}
                                     options={[
                                         {
                                             id: 'a',
-                                            text: "The green showing the phytoplankton looks different.",
-                                            explanation: "Yes, the phytoplankton does seem to be forming an interesting pattern."
+                                            text: "O verde que mostra o fitoplâncton parece diferente.",
+                                            explanation: "Sim, o fitoplâncton parece estar formando um padrão interessante."
                                         },
                                         {
                                             id: 'b',
-                                            text: "I notice the waves.",
-                                            explanation: "Actually, it’s not the waves I notice, but the phytoplankton itself forming a wave-like pattern."
+                                            text: "Eu percebo as ondas.",
+                                            explanation: "Na verdade, não são as ondas que noto, mas o próprio fitoplâncton formando um padrão semelhante a ondas."
                                         },
                                         {
                                             id: 'c',
-                                            text: "I can also spot a desert.",
-                                            explanation: "The desert could be significant for our analysis! Plus, the phytoplankton appears to be creating a unique pattern that might be worth exploring further."
+                                            text: "Também percebo um deserto.",
+                                            explanation: "O deserto pode ser significativo para nossa análise! Além disso, o fitoplâncton parece estar criando um padrão único que pode valer a pena explorar mais a fundo."
                                         },
                                     ]}
                                     correctAnswerId={null}
@@ -1528,27 +1526,27 @@ const getMissionsByDifficulty = (difficulty) => {
                             next: 2,
                             component: (
                                 <OnlyOneQuestion
-                                    questionText={"Let’s put on our scientist hats and come up with some fun hypotheses for what’s going on here:"}
+                                    questionText={"Vamos colocar nossos chapéus de cientistas e criar algumas hipóteses divertidas sobre o que está acontecendo aqui:"}
                                     options={[
                                         {
                                             id: 'a',
-                                            text: "The wind is blowing the phytoplankton around, spreading them across the water like confetti.",
-                                            explanation: "Not exactly! The wind isn’t giving the phytoplankton a lift, but it’s playing a big role by pushing surface waters westward and letting nutrient-filled water rise up from the deep ocean and could carry desert dust from the Sahara, which is full of iron and other goodies that help the phytoplankton grow. That’s where the phytoplankton get their feast!"
+                                            text: "O vento está soprando o fitoplâncton, espalhando-o pela água como confete.",
+                                            explanation: "Não exatamente! O vento não está dando um impulso ao fitoplâncton, mas está desempenhando um papel importante empurrando as águas superficiais para o oeste e permitindo que águas ricas em nutrientes subam da profundidade do oceano. Além disso, o vento pode carregar poeira do deserto do Saara, que está cheia de ferro e outros nutrientes que ajudam o fitoplâncton a crescer. É ali que o fitoplâncton encontra sua festa!"
                                         },
                                         {
                                             id: 'b',
-                                            text: "The wind is carrying important nutrients to the surface that the phytoplankton need to grow big and strong.",
-                                            explanation: "You’re on the right track! The wind actually plays a big role by pushing surface waters westward and letting nutrient-filled water rise up from the deep ocean and could carry desert dust from the Sahara, which is full of iron and other goodies that help the phytoplankton grow."
+                                            text: "O vento está carregando nutrientes importantes para a superfície que o fitoplâncton precisa para crescer grande e forte.",
+                                            explanation: "Você está no caminho certo! O vento desempenha um papel importante empurrando as águas superficiais para o oeste e permitindo que águas ricas em nutrientes subam da profundidade do oceano. Além disso, o vento pode carregar poeira do deserto do Saara, que está cheia de ferro e outros nutrientes que ajudam o fitoplâncton a crescer."
                                         },
                                         {
                                             id: 'c',
-                                            text: "The desert is packed with nutrients, and its dust is sprinkling into the water, helping the ecosystem thrive.",
-                                            explanation: "You got it! The Sahara desert is like a big jar of nutrient-rich dust, full of iron. When the winds carry this dust over the ocean, it sprinkles into the water and gives the phytoplankton an extra boost, helping the whole ecosystem stay healthy. And the wind plays a big role too by pushing surface waters westward and letting nutrient-filled water rise up from the deep ocean."
+                                            text: "O deserto está repleto de nutrientes, e sua poeira está caindo na água, ajudando o ecossistema a prosperar.",
+                                            explanation: "Você entendeu! O deserto do Saara é como um grande jarro de poeira rica em nutrientes, cheia de ferro. Quando os ventos carregam essa poeira sobre o oceano, ela cai na água e dá um impulso extra ao fitoplâncton, ajudando a manter todo o ecossistema saudável. E o vento também desempenha um papel importante, empurrando as águas superficiais para o oeste e permitindo que águas ricas em nutrientes subam da profundidade do oceano."
                                         },
                                         {
                                             id: 'd',
-                                            text: "The phytoplankton just love hanging out nearby – it’s their favorite spot!",
-                                            explanation: "Well, it’s not exactly their choice to live there, but they do thrive because the conditions are just perfect! Thanks to the nutrient-rich waters being pulled to the surface and a sprinkle of desert dust, it’s the ideal spot for them to bloom all year long."
+                                            text: "O fitoplâncton simplesmente adora ficar por perto – é o seu local favorito!",
+                                            explanation: "Bem, não é exatamente uma escolha deles viver lá, mas eles realmente prosperam porque as condições são perfeitas! Graças às águas ricas em nutrientes que são trazidas à superfície e a uma pitada de poeira do deserto, é o local ideal para eles florescerem o ano todo."
                                         },
                                     ]}
                                     correctAnswerId={null}
@@ -1563,15 +1561,14 @@ const getMissionsByDifficulty = (difficulty) => {
                             component: (
                                 <InformativeSectionStage nextStage={3}>
                                     <div className="mission-card-header">
-                                        <h2>Phytoplankton</h2>
-                                        <h4>Here's some quick facts about it!</h4>
+                                        <h2>Fitoplâncton</h2>
+                                        <h4>Aqui estão alguns fatos rápidos sobre o fitoplâncton:</h4>
                                     </div>
                                     <div className="image-container">
                                         <img src={phytoplankton}></img>
                                     </div>
                                     <div className="text">
-                                        <p>The food chain is kind of like nature’s dinner party! It’s all about who’s eating and who’s being eaten, with energy passing along the line. It starts with the chefs—plants and tiny phytoplankton—that whip up energy from sunlight. Then, little critters like zooplankton come along for a bite. After that, small fish snack on those critters, and bigger fish come in to munch on the smaller ones. It keeps going until we get to the ocean’s top diners, like sharks or whales!
-                                            Phytoplankton are the tiny heroes at the base of this party. Without them, no one else gets to eat, and the whole chain could fall apart. So, they’re super important to keep the food chain running smoothly!
+                                        <p>A cadeia alimentar é um pouco como um jantar da natureza! Tudo gira em torno de quem come e quem é comido, com a energia passando ao longo da linha. Começa com os cozinheiros — plantas e o pequeno fitoplâncton — que preparam energia a partir da luz solar. Em seguida, pequenos critérios como o zooplâncton vêm para uma mordida. Depois disso, peixes pequenos se alimentam desses critérios, e peixes maiores vêm para mastigar os menores. Isso continua até chegarmos aos principais comensais do oceano, como tubarões ou baleias! Os fitoplânctons são os pequenos heróis na base dessa festa. Sem eles, ninguém mais consegue se alimentar, e toda a cadeia poderia desmoronar. Portanto, eles são super importantes para manter a cadeia alimentar funcionando suavemente!
                                         </p>
                                     </div>
                                 </InformativeSectionStage>
@@ -1583,32 +1580,32 @@ const getMissionsByDifficulty = (difficulty) => {
                             next: 4,
                             component: (
                                 <OnlyOneQuestion
-                                    questionText={"So the desert and the wind are connected, helping the phytoplankton grow. What do you think about it?"}
+                                    questionText={"Então, o deserto e o vento estão conectados, ajudando o fitoplâncton a crescer. O que você acha disso?"}
                                     options={[
                                         {
                                             id: 'a',
-                                            text: "It is boring!",
-                                            explanation: "Oh no, it’s far from boring! It’s like nature’s own puzzle, with each piece fitting together perfectly. The wind, the desert, the ocean, everything plays a part in helping these tiny ocean algae bloom. It’s like a secret teamwork mission happening all around us! A lot of things in nature are connected and understanding and solving a problem could help us to solve another one and understanding and modeling even more of the world."
+                                            text: "É chato!",
+                                            explanation: "Oh não, está longe de ser chato! É como o próprio quebra-cabeça da natureza, com cada peça se encaixando perfeitamente. O vento, o deserto, o oceano, tudo desempenha um papel na ajuda dessas algas oceânicas microscópicas a florescer. É como uma missão de trabalho em equipe secreta acontecendo ao nosso redor! Muitas coisas na natureza estão conectadas e entender e resolver um problema pode nos ajudar a resolver outro, e entender e modelar ainda mais o mundo."
                                         },
                                         {
                                             id: 'b',
-                                            text: "Nature is not an isolated system",
-                                            explanation: "Exactly! Nature is all about connections. The desert and the ocean may seem far apart, but they’re really good friends. The wind carries the desert’s nutrient-rich dust across the ocean, and that helps the phytoplankton grow. It’s a beautiful example of how everything in nature is linked together in surprising ways! A lot of things in nature are connected and understanding and solving a problem could help us to solve another one and understanding and modeling even more of the world."
+                                            text: "A natureza não é um sistema isolado.",
+                                            explanation: "Exatamente! A natureza é toda sobre conexões. O deserto e o oceano podem parecer muito distantes, mas são realmente bons amigos. O vento carrega a poeira rica em nutrientes do deserto sobre o oceano, e isso ajuda o fitoplâncton a crescer. É um belo exemplo de como tudo na natureza está ligado de maneiras surpreendentes! Muitas coisas na natureza estão conectadas e entender e resolver um problema pode nos ajudar a resolver outro, e entender e modelar ainda mais o mundo."
                                         },
                                         {
                                             id: 'c',
-                                            text: "It’s like the desert is sending a care package to the ocean!",
-                                            explanation: "Exactly! Nature is all about connections. The desert and the ocean may seem far apart, but they’re really good friends. The wind carries the desert’s nutrient-rich dust across the ocean, and that helps the phytoplankton grow. It’s a beautiful example of how everything in nature is linked together in surprising ways! A lot of things in nature are connected and understanding and solving a problem could help us to solve another one and understanding and modeling even more of the world."
+                                            text: "É como se o deserto estivesse enviando um pacote de cuidados para o oceano!",
+                                            explanation: "Exatamente! A natureza é toda sobre conexões. O deserto e o oceano podem parecer muito distantes, mas são realmente bons amigos. O vento carrega a poeira rica em nutrientes do deserto sobre o oceano, e isso ajuda o fitoplâncton a crescer. É um belo exemplo de como tudo na natureza está ligado de maneiras surpreendentes! Muitas coisas na natureza estão conectadas e entender e resolver um problema pode nos ajudar a resolver outro, e entender e modelar ainda mais o mundo."
                                         },
                                         {
                                             id: 'd',
-                                            text: "Wow, nature is like a big team sport!",
-                                            explanation: "Exactly! Nature is all about connections. The desert and the ocean may seem far apart, but they’re really good friends. The wind carries the desert’s nutrient-rich dust across the ocean, and that helps the phytoplankton grow. It’s a beautiful example of how everything in nature is linked together in surprising ways! A lot of things in nature are connected and understanding and solving a problem could help us to solve another one and understanding and modeling even more of the world."
+                                            text: "Uau, a natureza é como um grande esporte em equipe!",
+                                            explanation: "Exatamente! A natureza é toda sobre conexões. O deserto e o oceano podem parecer muito distantes, mas são realmente bons amigos. O vento carrega a poeira rica em nutrientes do deserto sobre o oceano, e isso ajuda o fitoplâncton a crescer. É um belo exemplo de como tudo na natureza está ligado de maneiras surpreendentes! Muitas coisas na natureza estão conectadas e entender e resolver um problema pode nos ajudar a resolver outro, e entender e modelar ainda mais o mundo."
                                         },
                                         {
                                             id: 'e',
-                                            text: "So the wind is like a delivery service!",
-                                            explanation: "Exactly! Nature is all about connections. The desert and the ocean may seem far apart, but they’re really good friends. The wind carries the desert’s nutrient-rich dust across the ocean, and that helps the phytoplankton grow. It’s a beautiful example of how everything in nature is linked together in surprising ways! A lot of things in nature are connected and understanding and solving a problem could help us to solve another one and understanding and modeling even more of the world."
+                                            text: "Então o vento é como um serviço de entrega!",
+                                            explanation: "Exatamente! A natureza é toda sobre conexões. O deserto e o oceano podem parecer muito distantes, mas são realmente bons amigos. O vento carrega a poeira rica em nutrientes do deserto sobre o oceano, e isso ajuda o fitoplâncton a crescer. É um belo exemplo de como tudo na natureza está ligado de maneiras surpreendentes! Muitas coisas na natureza estão conectadas e entender e resolver um problema pode nos ajudar a resolver outro, e entender e modelar ainda mais o mundo."
                                         },
                                     ]}
                                     correctAnswerId={null}
@@ -1622,22 +1619,22 @@ const getMissionsByDifficulty = (difficulty) => {
                             next: 5,
                             component: (
                                 <OnlyOneQuestion
-                                    questionText={"The Sahara dust is considered an aerosol, what is it?"}
+                                    questionText={"A poeira do Saara é considerada um aerossol, o que é isso?"}
                                     options={[
                                         {
                                             id: 'a',
-                                            text: "It is like a type of deodorant",
-                                            explanation: "Kind of! Just like the spray from deodorant, an aerosol is made up of tiny particles that float in the air. But instead of making you smell fresh, aerosols can come from things like sea spray, smoke, or even volcanic ash."
+                                            text: "É como um tipo de desodorante.",
+                                            explanation: "Quase! Assim como o spray de desodorante, um aerossol é composto por partículas minúsculas que flutuam no ar. Mas, em vez de deixar você cheirando fresco, os aerossóis podem vir de coisas como borrifos do mar, fumaça ou até mesmo cinzas vulcânicas.."
                                         },
                                         {
                                             id: 'b',
-                                            text: "It is tiny particles in the air",
-                                            explanation: "Exactly! Aerosols are very small solid or liquid particles that stay suspended in the air. They can be natural, like from a volcano, or human-made, like from pollution."
+                                            text: "São partículas minúsculas no ar.",
+                                            explanation: "Exatamente! Os aerossóis são partículas muito pequenas, sólidas ou líquidas, que permanecem suspensas no ar. Eles podem ser naturais, como de um vulcão, ou produzidos pelo homem, como da poluição."
                                         },
                                         {
                                             id: 'c',
-                                            text: "It’s like glitter in the sky",
-                                            explanation: "That’s right! Aerosols are tiny particles, almost like invisible glitter floating through the air. They’re light enough to stay suspended and can have all sorts of effects, from influencing weather to spreading nutrients or pollution."
+                                            text: "É como glitter no céu.",
+                                            explanation: "Exatamente! Os aerossóis são partículas minúsculas, quase como glitter invisível flutuando pelo ar. Eles são leves o suficiente para permanecer suspensos e podem ter todo tipo de efeitos, desde influenciar o clima até espalhar nutrientes ou poluição."
                                         },
                                         {
                                             id: 'd',
