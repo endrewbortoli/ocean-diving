@@ -842,12 +842,12 @@ const getMissionsByDifficulty = (difficulty) => {
                 {
                     index: 0,
                     concluded: false,
-                    title: "North America from Above",
+                    title: "América do Norte",
                     lat: 42.81671,
                     lng: -69.95354,
                     location: "Northeastern US and Canada",
                     image: pace_maine,
-                    text: "✨ Your first mission is coming up: We’ll be diving into the ocean’s colors, discovering how the light bouncing off the water can reveal hidden secrets about life in the whole world! The region, encompassing Georges Bank and the Gulf of Maine, is renowned for its rich biological productivity, historically making it a commercial fishing hub. However, overfishing and climate change now pose significant threats to this vital ecosystem.",
+                    text: "✨ Sua primeira missão está chegando: Vamos mergulhar nas cores do oceano, descobrindo como a luz refletida na água pode revelar segredos ocultos sobre a vida em todo o mundo! A região, que abrange o Banco Georges e o Golfo do Maine, é renomada por sua rica produtividade biológica, tornando-se historicamente um centro de pesca comercial. No entanto, a sobrepesca e as mudanças climáticas agora representam ameaças significativas a esse ecossistema vital.",
                     initialViewState: {
                         latitude: 42.81671,
                         longitude: -69.95354,
@@ -885,10 +885,10 @@ const getMissionsByDifficulty = (difficulty) => {
                             next: 1,
                             component: (
                                 <OnlyOneQuestion
-                                    questionText={"Take a look at this awesome image. What do you see? What’s different or exciting? What caught your eye? Now, look at the colours in it, is the white you see just one thing or more than one?"}
+                                    questionText={"Dê uma olhada nesta imagem incrível. O que você vê? O que é diferente ou empolgante? O que chamou sua atenção? Agora, observe as cores nela; o branco que você vê é apenas uma coisa ou mais de uma?"}
                                     options={[
-                                        { id: 'a', text: 'It is all the same', explanation: 'Not exactely! Let\'s look a little closer!' },
-                                        { id: 'b', text: 'There are different whites', explanation: '' }
+                                        { id: 'a', text: 'É tudo igual.', explanation: 'Não exatamente! Vamos dar uma olhada mais de perto!' },
+                                        { id: 'b', text: 'Há diferentes brancos.', explanation: '' }
                                     ]}
                                     correctAnswerId={'b'}
                                     nextStage={1}
@@ -902,28 +902,29 @@ const getMissionsByDifficulty = (difficulty) => {
                             component: (
                                 <InformativeSectionStage nextStage={2}>
                                     <div className="mission-card-header">
-                                        <h2>The whites</h2>
-                                        <h4>There are two white things in the picture: clouds and snow.</h4>
+                                        <h2>Os brancos</h2>
+                                        <h4>Há duas coisas brancas na imagem: nuvens e neve.</h4>
                                     </div>
                                     <div className="list">
-                                        <h3>Here are some tips to help tell them apart:</h3>
+                                        <h3>Aqui estão algumas dicas para ajudar a diferenciá-las:</h3>
                                         <ul>
                                             <div className="image-container">
                                                 <img src={pace_clouds}></img>
                                             </div>
-                                            <li>Clouds:</li>
+                                            <li>Nuvens:</li>
                                             <ul>
-                                                <li>Clouds appear as bright white, fluffy patches. They are often more irregular in shape and can be seen floating over land and water.</li>
-                                                <li>In this image, clouds tend to have a softer, more diffuse appearance and are present in various parts, such as over the ocean on the right side, and some cover can also be seen over the land.
+                                                <li>As nuvens aparecem como manchas brancas brilhantes e fofas. Elas costumam ter formas mais irregulares e podem ser vistas flutuando sobre a terra e a água.</li>
+                                                <li>Nesta imagem, as nuvens tendem a ter uma aparência mais suave e difusa, e estão presentes em várias partes, como sobre o oceano do lado direito, e algumas coberturas também podem ser vistas sobre a terra.
+
                                                 </li>
                                             </ul>
                                             <div className="image-container">
                                                 <img src={pace_snow}></img>
                                             </div>
-                                            <li>Snow:</li>
+                                            <li>Neve:</li>
                                             <ul>
-                                                <li>Snow, on the other hand, covers large areas of the land, especially in the northern regions. It has a more uniform and textured look, as it blankets the surface evenly.</li>
-                                                <li>The snow appears as a solid white or light gray color and tends to follow the contours of the land, particularly in the upper part of the image (towards the top center and left), where the land is covered by snow.</li>
+                                                <li>A neve, por outro lado, cobre grandes áreas da terra, especialmente nas regiões do norte. Ela tem uma aparência mais uniforme e texturizada, pois se espalha de maneira uniforme sobre a superfície.</li>
+                                                <li>A neve aparece como uma cor branca sólida ou cinza claro e tende a seguir os contornos da terra, particularmente na parte superior da imagem (em direção ao centro superior e à esquerda), onde a terra está coberta de neve.</li>
                                             </ul>
 
                                         </ul>
@@ -937,10 +938,10 @@ const getMissionsByDifficulty = (difficulty) => {
                             next: 3,
                             component: (
                                 <OnlyOneQuestion
-                                    questionText={"Take a look at the snow, do you notice anything strange about how it looks?"}
+                                    questionText={"Dê uma olhada na neve, você nota algo estranho sobre como ela parece?"}
                                     options={[
-                                        { id: 'a', text: 'No', explanation: 'Take a closer look! While snow covers the ground, there are patches of brown earth peeking through. The snow itself seems cracked, like it’s resting on a layer of sediment.' },
-                                        { id: 'b', text: 'Yes', explanation: 'Correct, now we can look closer' }
+                                        { id: 'a', text: 'Não', explanation: 'Dê uma olhada mais de perto! Embora a neve cubra o chão, há manchas de terra marrom aparecendo. A neve em si parece estar rachada, como se estivesse repousando sobre uma camada de sedimento.' },
+                                        { id: 'b', text: 'Sim', explanation: 'Correto, agora podemos olhar mais de perto.' }
                                     ]}
                                     correctAnswerId={'b'}
                                     nextStage={3}
@@ -953,12 +954,12 @@ const getMissionsByDifficulty = (difficulty) => {
                             next: 4,
                             component: (
                                 <OnlyOneQuestion
-                                    questionText={"Can you come up with some theory about what is happening here? "}
+                                    questionText={"Você consegue formular alguma teoria sobre o que está acontecendo aqui? "}
                                     options={[
-                                        { id: 'a', text: 'Alien activity: The cracks in the snow were caused by UFOs landing, leaving behind traces of extraterrestrial visitors!', explanation: 'Oops, looks like that’s not quite right! The correct answer is Early signs of Spring: The warmth of the approaching Spring is causing the snow to melt unevenly, leaving cracks and patches of exposed ground' },
-                                        { id: 'b', text: 'Earthquake tremors: The cracked snow is due to small earthquake tremors, shaking the ground and splitting the snow layer.', explanation: 'Oops, looks like that’s not quite right! The correct answer is Early signs of Spring: The warmth of the approaching Spring is causing the snow to melt unevenly, leaving cracks and patches of exposed ground' },
-                                        { id: 'c', text: 'Underground creatures: A colony of giant moles is tunneling just beneath the surface, causing the snow to crack and reveal patches of dirt.', explanation: 'Oops, looks like that’s not quite right! The correct answer is Early signs of Spring: The warmth of the approaching Spring is causing the snow to melt unevenly, leaving cracks and patches of exposed ground' },
-                                        { id: 'd', text: 'A giant sea monster Early signs of Spring: The warmth of the approaching Spring is causing the snow to melt unevenly, leaving cracks and patches of exposed ground.taking a bath', explanation: 'Congratulations! You got it right!' }
+                                        { id: 'a', text: 'Atividade alienígena: As rachaduras na neve foram causadas por OVNIs pousando, deixando para trás vestígios de visitantes extraterrestres!', explanation: 'Ops, parece que isso não está exatamente certo! A resposta correta é: Sinais iniciais da Primavera: O calor da Primavera que se aproxima está fazendo com que a neve derreta de maneira desigual, deixando rachaduras e manchas de solo exposto.' },
+                                        { id: 'b', text: 'Tremores de terremoto: A neve rachada é resultado de pequenos tremores de terremoto, que agitam o solo e dividem a camada de neve.', explanation: 'Ops, parece que isso não está exatamente certo! A resposta correta é: Sinais iniciais da Primavera: O calor da Primavera que se aproxima está fazendo com que a neve derreta de maneira desigual, deixando rachaduras e manchas de solo exposto.' },
+                                        { id: 'c', text: 'Underground creatures: A colony of giant moles is tunneling just beneath the surface, causing the snow to crack and reveal patches of dirt.', explanation: 'Ops, parece que isso não está exatamente certo! A resposta correta é: Sinais iniciais da Primavera: O calor da Primavera que se aproxima está fazendo com que a neve derreta de maneira desigual, deixando rachaduras e manchas de solo exposto.'},
+                                        { id: 'd', text: 'Sinais iniciais da Primavera: O calor da Primavera que se aproxima está fazendo com que a neve derreta de maneira desigual, deixando rachaduras e manchas de solo exposto.', explanation: 'Parabéns! Você acertou!' }
                                     ]}
                                     correctAnswerId={'a'}
                                     nextStage={4}
@@ -972,7 +973,7 @@ const getMissionsByDifficulty = (difficulty) => {
                             next: 5,
                             component: (
                                 <OnlyOneQuestion
-                                    questionText={"The blue is water as we can see, but what could be the green?"}
+                                    questionText={"O azul é água, como podemos ver, mas o que poderia ser o verde?"}
                                     options={[
                                         { id: 'a', text: 'Algae', explanation: 'Totally! Let\'s look further' },
                                         { id: 'b', text: 'Pollution', explanation: 'Not in this case! Pollution can look like many colors including green, however we would be able to identify it by other impacts in the environment, like flora and fauna dying and other disturbances' },
