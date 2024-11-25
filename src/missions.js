@@ -114,7 +114,7 @@ const getMissionsByDifficulty = (difficulty) => {
                                     options={[
                                         { id: 'a', text: 'Uma tartaruga morta devido aos detritos de pesca.', explanation: 'Isso mesmo, que olhar afiado! Essa tartaruga foi afetada pelo problema da pesca fantasma e infelizmente morreu por conta disso.'},
                                         { id: 'b', text: 'Uma tartaruga em seu habitat natural, nadando livremente. ', explanation: 'Hmm, não é bem isso. Essa tartaruga não está nadando livremente. Ela está presa em uma rede, um problema típico da pesca fantasma. ' },
-                                        { id: 'c', text: 'Uma tartaruga sendo libertada por mergulhadores. . ', explanation: 'Boa tentativa, mas não foi isso que aconteceu. Essa tartaruga não foi salva por mergulhadores; ela acabou sendo vítima da pesca fantasma. ' }
+                                        { id: 'c', text: 'Uma tartaruga sendo libertada por mergulhadores.', explanation: 'Boa tentativa, mas não foi isso que aconteceu. Essa tartaruga não foi salva por mergulhadores; ela acabou sendo vítima da pesca fantasma. ' }
                                     ]}
                                     correctAnswerId={null}
                                     nextStage={1}
@@ -163,7 +163,7 @@ const getMissionsByDifficulty = (difficulty) => {
                             next: 3,
                             component: (
                                 <OnlyOneQuestion
-                                    questionText={"Esta rede foi deixada no oceano. De acordo com seus conhecimentosque pode acontecer com os animais marinhos que encontram redes abandonadas como essa? "}
+                                    questionText={"Esta rede foi deixada no oceano. De acordo com seus conhecimentos, o que pode acontecer com os animais marinhos que encontram redes abandonadas como essa? "}
                                     options={[
                                         { id: 'a', text: 'Eles podem acabar presos na rede e ficar feridos ou morrer. ', explanation: 'Incrível! Isso mesmo, esses materiais descartados nos oceanos prejudicam demais a biodiversidade marinha e principalmente os animais.' },
                                         { id: 'b', text: 'A rede ajuda os animais a se esconderem de predadores.', explanation: 'Não exatamente. Embora pareça um abrigo, essa rede não oferece proteção; ela representa um grande risco para os animais. ' },
@@ -375,7 +375,7 @@ const getMissionsByDifficulty = (difficulty) => {
                                         { id: 'b', text: 'Melhora a saúde dos recifes de corais.', explanation: 'Pescar em recifes pode machucar os corais! Se tirarmos muitos peixes importantes, os recifes podem ficar doentes e perder sua beleza e vida.' },
                                         { id: 'c', text: 'Pode causar vulnerabilidade nos ecossistemas marinhos', explanation: 'Isso mesmo! A Pesca esportiva pode deixar os ecossistemas marinhos mais fracos... Se não cuidarmos bem, algumas espécies podem desaparecer, e isso afeta toda a vida no mar, tornando tudo mais frágil.' },
                                     ]}
-                                    correctAnswerId={'b'}
+                                    correctAnswerId={null}
                                     nextStage={4}
                                 />
                             ),
@@ -402,7 +402,7 @@ const getMissionsByDifficulty = (difficulty) => {
                         },
                         {
                             displayMap: false,
-                            fallbackImage: industria,
+                            fallbackImage: agua,
                             next: 6,
                             component: (
                                 <OnlyOneQuestion
@@ -824,7 +824,7 @@ const getMissionsByDifficulty = (difficulty) => {
                                         location: "Antártica",
                                         image: mauritania,
                                         report: "",
-                                        reportAll: "Agora você sabe muito mais sobre a mudança de temperatura e seus impactos. Sabia que algumas questões têm mais de uma reposta correta? Se quiser, selecione a missão no globo e faça-a novamente para adquirir mais conhecimento sobre o assunto"
+                                        reportAll: "Parabéns, pequeno explorador!✨ Você embarcou em uma incrível aventura pelo oceano e aprendeu sobre o aumento da temperatura dos oceanos, um problema que traz graves consequências. Sabendo sobre seus impactos, você agora tem uma melhor nocão da importância do oceano! 🌊"
                                     }}
                                     badge={{
                                         name: "Tiny Travelers with Big Effects!",
