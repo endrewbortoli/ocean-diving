@@ -1,18 +1,12 @@
-import oman from './assets/oman.jpg';
-import gulf_of_maine from './assets/gulf_of_maine.jpg';
 import maine_to_george from './assets/georges_to_maine.png';
 import pace_clouds from './assets/pace_introduction_clouds.png';
-import pace_land from './assets/pace_introduction_land.png';
 import pace_water from './assets/pace_introduction_water.png';
 import pace_maine from './assets/pace_introdction_image_maine.png';
 import pace_snow from './assets/apce_introduction_snow.png';
 import oman_pace from './assets/oman_pace.jpg';
-import oman_green from './assets/oman_green.png';
 import saginaw_bay from './assets/saginaw_bay.jpg';
 import saginaw_pace from './assets/saginaw_bay_pace.jpg';
-import cyanobacteria from './assets/cyanobacteria.jpg';
 import image_globe from './assets/image_globe.jpg';
-import marine_food_chain from './assets/marine_food_chain.jpg';
 import mauritania from './assets/mauritania.jpg';
 import mauritania_pace from './assets/mauritania_pace.png';
 import mud_spill_rebuilding from './assets/mud_spill_rebulding.jpg';
@@ -22,14 +16,9 @@ import saginaw_pace_stain from './assets/pace_saginaw_bay_stain.png';
 import phytoplankton from './assets/phytoplankton.jpg';
 import mauritania_above from './assets/mauritania_above.jpg';
 import mauritania_globe from './assets/mauritania_globe.png';
-import saginaw_bay_river_mud from './assets/saginaw_bay_river_mud.png';
-import saharra_winds from './assets/saharra_winds.jpg';
-import salton_sea_pace from './assets/salton_sea_pace.jpg';
 import badgeFigure from './assets/Badge.png';
 import omanData from './assets/data/oman_winter_norm.csv';
-import volcaData from './assets/data/vulcan_erupting_norm.csv';
 import sagiData from './assets/data/saginaw_bay_norm.csv';
-import MultipleQuestionStage from './components/stages/MultipleQuestionStage';
 import FinalStage from './components/stages/FinalStage';
 import InformativeSectionStage from './components/stages/InformativeSectionStage';
 import MapFocusStage from './components/stages/MapFocusStage';
@@ -45,32 +34,25 @@ import FotoCoralBonita from './assets/oceandiving/mission1/marbrasilcosta.jpg';
 import TartarugaNemo from './assets/oceandiving/mission1/tartaruganemo.jpg';
 import EcossistemaMarinho from './assets/oceandiving/mission1/ecossistemamarinho.jpg';
 
-import MapaEutro1 from './assets/oceandiving/mission3/eurotrificacaomapa1.webp';
 import LagoEutro from './assets/oceandiving/mission3/eutro.webp';
-import golfomexico2 from './assets/oceandiving/mission3/golfomexico2.jpg';
-import zonamorta from './assets/oceandiving/mission3/zonamorta mapa.webp';
 import lagoeutro2 from './assets/oceandiving/mission3/lagoeutro2.jpg';
 import mapaeutro2 from './assets/oceandiving/mission3/eutromapa2.png';
 import mapazonamortamex from './assets/oceandiving/mission3/zonamortamex2.png';
 import golfmex2 from './assets/oceandiving/mission3/golfomex2.webp';
-import golfmex3 from './assets/oceandiving/mission3/golfomex3.jpg';
 
 import Corais from './assets/oceandiving/mission2/corais.jpg';
 import StartMission2 from './assets/oceandiving/mission2/acidificação main.jpg';
 import questao2 from './assets/oceandiving/mission2/image560x340cropped.jpg';
 import pescaesportiva from './assets/oceandiving/mission2/pesca esportiva.jpg';
 import pescaartesanal from './assets/oceandiving/mission2/pescaartesanal.jpg';
-import carrinhofumaça from './assets/oceandiving/mission2/carro-soltando-fumaça-preta.png';
 import industria from './assets/oceandiving/mission2/efeito-estufa.jpg';
 import longbeach from './assets/oceandiving/mission2/long-beach.jpg';
 import agua from './assets/oceandiving/mission2/iStock-822555200.webp';
 import pexe from './assets/oceandiving/mission2/pexe.jpg';
 import TemperaturaAumentando from './assets/oceandiving/mission4/temperaturas_aumentando.webp';
-import EmblemaSubmerged from './assets/emblemasubmerged.jpg';
 
 
 
-import EmblemaCongrats from './assets/emblematartarugacongrats.jpg';
 
 //pulei linhas pra não arriscar de dar erro depois. depois pode apagar
 import MapaAntartica from './assets/oceandiving/mission4/antartica_mapa.png';
