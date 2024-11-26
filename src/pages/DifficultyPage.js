@@ -51,11 +51,11 @@ export default function App() {
     audio.loop = true;
     audio.volume = 1;
     audio.muted = true;
-    
+
     audio.play().then(() => {
       audio.muted = false;
     }).catch((error) => console.log("Falha ao iniciar o áudio automaticamente:", error));
-    
+
     return () => {
       audio.pause();
     };
@@ -93,6 +93,10 @@ export default function App() {
     navigate("/informative"); // Redireciona para a página de ajuda
   };
 
+  const goToLanguagePage = () => {
+    window.location.href = "https://jactech9458.com/oceandive/en"; // Redireciona para o site externo
+  };
+
   return (
     <>
       <div className="canvas-container">
@@ -124,7 +128,7 @@ export default function App() {
           color: 'white',
           border: 'none',
           borderRadius: '5px',
-          cursor: 'pointer'
+          cursor: 'pointer',
         }}
       >
         {isMuted ? 'Unmute' : 'Mute'}
@@ -149,6 +153,25 @@ export default function App() {
         }}
       >
         ?
+      </button>
+
+      {/* Botão de Seleção de Idioma - ao lado do botão de interrogação */}
+      <button
+        onClick={goToLanguagePage}
+        style={{
+          position: 'absolute',
+          bottom: '22px',  // Posiciona ao lado do botão de interrogação
+          left: '80px',    // Ajusta para colocar o botão à direita do botão de interrogação
+          zIndex: 11,
+          padding: '10px 20px',
+          backgroundColor: '#1CAAD9',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          cursor: 'pointer',
+        }}
+      >
+        PT
       </button>
 
       <button className="start-mission-button" onClick={goToNextPage}>
