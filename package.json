@@ -1,7 +1,7 @@
 {
   "name": "ocean-diving",
   "version": "0.1.0",
-  "homepage": "https://endrewbortoli.github.io/ocean-diving",
+  "homepage": "https://jactech9458.com/oceandive",
   "private": true,
   "dependencies": {
     "@deck.gl/aggregation-layers": "^9.0.35",
