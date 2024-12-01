@@ -1,3 +1,5 @@
+// src/App.jsx
+
 import * as THREE from 'three';
 import React, { Suspense, useRef, useMemo, useState, useEffect } from 'react';
 import { Canvas, extend, useThree, useLoader, useFrame } from '@react-three/fiber';
@@ -94,7 +96,7 @@ export default function App() {
   };
 
   const goToLanguagePage = () => {
-    window.location.href = "https://jactech9458.com/oceandive/en"; // Redireciona para o site externo
+    window.location.href = "https://jactech9458.com/oceandiving/en"; // Redireciona para o site externo
   };
 
   return (
@@ -131,7 +133,7 @@ export default function App() {
           cursor: 'pointer',
         }}
       >
-        {isMuted ? 'Unmute' : 'Mute'}
+        {isMuted ? 'Desmutar' : 'Mutar'}
       </button>
 
       {/* Botão de Interrogação */}
@@ -155,7 +157,7 @@ export default function App() {
         ?
       </button>
 
-      {/* Botão de Seleção de Idioma - ao lado do botão de interrogação */}
+      {/* Botão de Seleção de Idioma */}
       <button
         onClick={goToLanguagePage}
         style={{
@@ -171,12 +173,15 @@ export default function App() {
           cursor: 'pointer',
         }}
       >
-        PT
+        EN
       </button>
 
       <button className="start-mission-button" onClick={goToNextPage}>
         COMEÇAR MISSÃO
       </button>
+
+      {/* Exibe o contador de visualizações */}
+      {/* <PageViewCounter /> */}
     </>
   );
 }
