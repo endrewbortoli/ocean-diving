@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import "../styles/SelectionComponent.css";
-import mediumImage from '../assets/animal2.jpg';
-import hardImage from '../assets/animal3.jpg';
+import mediumImage from '../assets/reefscape1.png';
+import hardImage from '../assets/intothedeep1.png';
 import logo from '../assets/logooceanspace.png';
-import easyImage from '../assets/emblemainicio.jpg';
+import easyImage from '../assets/submerged.webp';
 
 
 const LpContent = ({ setDifficulty }) => {
   const options = [
-    { label: "FÁCIL", text: "Explorador", image: easyImage },
-    { label: "MÉDIO", text: "Detetive", image: mediumImage },
-    { label: "DÍFICIL", text: "Engenheiro", image: hardImage },
+    { label: "FÁCIL", text: "Submersos", image: easyImage },
+    { label: "MÉDIO", text: "Recifes", image: mediumImage },
+    { label: "DÍFICIL", text: "Nas Profundezas", image: hardImage },
   ];
   const [currentIndex, setCurrentIndex] = useState(1); // Start at "MÉDIO"
 
